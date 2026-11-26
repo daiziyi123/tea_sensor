@@ -1,0 +1,341 @@
+{
+  "baseline_backup": "C:\\Users\\15995\\AppData\\Local\\Temp\\tea_three_minute_rucb_1fj",
+  "files": [
+    {
+      "path": "Docs/README.md",
+      "change": "modified"
+    },
+    {
+      "path": "Docs/build_operations.md",
+      "change": "modified"
+    },
+    {
+      "path": "Docs/gps_integration.md",
+      "change": "modified"
+    },
+    {
+      "path": "Docs/protocol_v2.md",
+      "change": "modified"
+    },
+    {
+      "path": "Docs/three_minute_changed_files.json",
+      "change": "added"
+    },
+    {
+      "path": "Docs/three_minute_statistics.md",
+      "change": "added"
+    },
+    {
+      "path": "Docs/three_minute_validation.json",
+      "change": "added"
+    },
+    {
+      "path": "README.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_config.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_data.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_diagnostics.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_statistics.h",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_upload.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_version.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Src/app_main.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/App/Src/app_statistics.c",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense/App/Src/app_upload.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Bsp/Inc/bsp_config.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Docs/code_architecture.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Docs/integration_v2.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_architecture.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_arm.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_arm_execution.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_host.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_host_initial.log",
+      "change": "intermediate validation log; superseded by final log"
+    },
+    {
+      "path": "tea_sense/Docs/validation/three_minute_wire.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense.uvoptx",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense.uvprojx",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_ph.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_rain.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_soil.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_weather.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_wind_direction.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Inc/sensor_wind_speed.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_ph.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_rain.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_soil.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_weather.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_wind_direction.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Sensors/Src/sensor_wind_speed.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/ad3_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/ad5_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/adc_raw_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/arm_integration_main.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/check_arm_printf.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/check_server_upload.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/dtu_host_test.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/dtu_window_cases.h",
+      "change": "deleted"
+    },
+    {
+      "path": "tea_sense/Tests/integration_cases.h",
+      "change": "deleted"
+    },
+    {
+      "path": "tea_sense/Tests/ph_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/rain_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/run_host_tests.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/soil_host_test.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/soil_window_cases.h",
+      "change": "deleted"
+    },
+    {
+      "path": "tea_sense/Tests/stabilization_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/statistics_host_test.c",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense/Tests/three_minute_cases.h",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense/Tests/upload_wire_fixture.c",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/weather_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/wind_direction_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense/Tests/wind_speed_cases.h",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/.env",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/.env.example",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/README.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/STM32_INTEGRATION.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/VALIDATION.md",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/app/config.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/app/main.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/app/protocol.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/app/storage.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/app/tcp_server.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/compose.yaml",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/tests/test_dashboard.js",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/tests/test_gps.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/tests/test_gps_dashboard.js",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/tests/test_rain.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/tests/test_three_minute.py",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense_server/tests/test_three_minute_dashboard.js",
+      "change": "added"
+    },
+    {
+      "path": "tea_sense_server/tests/test_v2.py",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/validation/three_minute_frontend.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense_server/validation/three_minute_server.log",
+      "change": "generated validation evidence"
+    },
+    {
+      "path": "tea_sense_server/validation/three_minute_server_initial.log",
+      "change": "intermediate validation log; superseded by final log"
+    },
+    {
+      "path": "tea_sense_server/web/app.js",
+      "change": "modified"
+    },
+    {
+      "path": "tea_sense_server/web/index.html",
+      "change": "modified"
+    }
+  ]
+}

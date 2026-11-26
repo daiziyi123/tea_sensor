@@ -1,0 +1,3 @@
+SIMULATED V2 data; device=demo_cli_fixture
+TX seq=1 metrics=10; ACK id=1387 duplicate=False
+TX seq=2 metrics=10; ACK id=1388 duplicate=False

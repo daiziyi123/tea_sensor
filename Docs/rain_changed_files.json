@@ -1,0 +1,198 @@
+[
+  {
+    "path": "Docs/README.md",
+    "action": "modified"
+  },
+  {
+    "path": "Docs/acceptance_records.md",
+    "action": "modified"
+  },
+  {
+    "path": "Docs/build_operations.md",
+    "action": "modified"
+  },
+  {
+    "path": "Docs/device_calibration_register.md",
+    "action": "modified"
+  },
+  {
+    "path": "Docs/protocol_v2.md",
+    "action": "modified"
+  },
+  {
+    "path": "Docs/rain_integration_validation.md",
+    "action": "added"
+  },
+  {
+    "path": "Docs/wiring_power_interfaces.md",
+    "action": "modified"
+  },
+  {
+    "path": "README.md",
+    "action": "modified"
+  },
+  {
+    "path": "Tools/package_release.py",
+    "action": "modified"
+  },
+  {
+    "path": "integration_notes.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Inc/app_config.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Inc/app_data.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Inc/app_diagnostics.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Inc/app_version.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Src/app_main.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/App/Src/app_upload.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Docs/code_architecture.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Docs/integration_v2.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/MDK-ARM/tea_sense.uvoptx",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/MDK-ARM/tea_sense.uvprojx",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Sensors/Inc/sensor_rain.h",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense/Sensors/Src/sensor_rain.c",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense/Tests/ad5_cases.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/adc_raw_cases.h",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/arm_integration_main.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/check_architecture.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/check_arm_printf.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/check_rain_calibration.py",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense/Tests/check_server_upload.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/dtu_host_test.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/rain_calibration_samples.json",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense/Tests/rain_cases.h",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense/Tests/run_host_tests.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/soil_host_test.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense/Tests/upload_wire_fixture.c",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/README.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/STM32_INTEGRATION.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/VALIDATION.md",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/app/protocol.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/app/storage.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/tests/preview_dashboard.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/tests/test_dashboard.js",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/tests/test_rain.py",
+    "action": "added"
+  },
+  {
+    "path": "tea_sense_server/tests/test_sample.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/tests/test_v2.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/tools/send_sample.py",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/web/app.js",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/web/index.html",
+    "action": "modified"
+  },
+  {
+    "path": "tea_sense_server/web/style.css",
+    "action": "modified"
+  }
+]

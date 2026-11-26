@@ -1,0 +1,79 @@
+{
+  "updated": "2026-11-15",
+  "versions": {
+    "firmware": "0.9.1-dev",
+    "protocol_schema": 2,
+    "calibration_revision": "baseline-2",
+    "database_schema": 2
+  },
+  "git": false,
+  "source_identity": "rain_source_manifest.sha256; actual delivered bytes separately in package manifest",
+  "changed_files": "rain_changed_files.json",
+  "protection_audit": "rain_protection_audit.json",
+  "test_results": "rain_test_results.json",
+  "source_preview": "Releases/rain-source-preview-20261115",
+  "package_sha256": "Releases/rain-source-preview-20261115/tea_sense_source.zip.sha256",
+  "build_log": "rain_arm_build.log",
+  "firmware_binary_public": false,
+  "private_provision": "app_secrets.h and .env retained locally, omitted from source-only archive",
+  "hardware_validation": "pending; no flash",
+  "database": "schema2 generic metric tables, no production write/migration/restore",
+  "deployment": "production server not restarted; update server first then manually download firmware",
+  "artifacts": [
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense/tea_sense.hex",
+      "size": 133767,
+      "sha256": "74ec608a7cebada2118e8456cf9cf83698d2ac9a77486df0f40644d38da6a77c",
+      "distribution": "private controlled build; excluded from public source package"
+    },
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense/tea_sense.axf",
+      "size": 1894288,
+      "sha256": "8aee205a1501da9e1733dd86c1f5a31f507c2942c39dc81b641c4b8463f9fbc8",
+      "distribution": "private controlled build; excluded from public source package"
+    }
+  ],
+  "program_size": {
+    "code": 46232,
+    "ro_data": 1180,
+    "rw_data": 128,
+    "zi_data": 10840
+  },
+  "unverified": [
+    "real board/ISR timing and stack high water",
+    "real wiring/power and PA3 analog behaviour",
+    "4G/cpolar end to end",
+    "manual server/firmware upgrade, restart and network recovery",
+    "24-72h endurance",
+    "rain midpoint/spray/reference intensity accuracy",
+    "wind/pH physical accuracy and north reference"
+  ],
+  "software_checks": 11,
+  "all_software_exit_zero": true,
+  "isolated_source_verification": "Host + architecture passed from extracted source-only staging archive; release changes since staging are docs/evidence only",
+  "ui_validation": {
+    "fixture_only": true,
+    "sizes": [
+      "1920x1080",
+      "1280x900",
+      "390x844",
+      "fullscreen"
+    ],
+    "normal": 4.0,
+    "valid_zero": 0,
+    "failure_missing_stale": "em dash with status",
+    "reconnected": true,
+    "fixture_csv_rows": 1294
+  },
+  "production_listener": {
+    "ports": [
+      8000,
+      9000
+    ],
+    "pid_observed_unchanged": 42748
+  },
+  "test_listeners_stopped": [
+    18000,
+    19000
+  ]
+}

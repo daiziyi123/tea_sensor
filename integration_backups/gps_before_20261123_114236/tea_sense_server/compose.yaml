@@ -1,0 +1,25 @@
+services:
+  tea-sense:
+    build: .
+    restart: unless-stopped
+    environment:
+      HTTP_HOST: 0.0.0.0
+      HTTP_PORT: 8000
+      TCP_HOST: 0.0.0.0
+      TCP_PORT: 9000
+      DATABASE_PATH: /srv/tea/data/tea_sense.db
+      ONLINE_SECONDS: ${ONLINE_SECONDS:-60}
+      INGEST_TOKEN: ${INGEST_TOKEN:?Set INGEST_TOKEN in .env}
+      VIEW_TOKEN: ${VIEW_TOKEN:?Set VIEW_TOKEN in .env}
+    ports:
+      - "9000:9000"
+      - "${WEB_BIND:-127.0.0.1}:8000:8000"
+    volumes:
+      - tea-data:/srv/tea/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+volumes:
+  tea-data:

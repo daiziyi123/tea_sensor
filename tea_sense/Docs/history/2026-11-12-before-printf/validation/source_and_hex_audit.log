@@ -1,0 +1,5 @@
+PASS: 1465 preserved files unchanged: .ioc, Keil project, Core, Drivers and USART2/RS485 transport/direction
+PASS: VREF/gain values, confirmation flags, direction and 1000ms period preserved; default mode is 2
+PASS: reuse exactly four existing business .c files; no duplicated ADC/UART modules or project path changes
+PASS: current mode2 HEX checksum/EOF/reset vectors; SHA256=e6a31815745d5b580b546cad2c4356e855b05980cf1f7b4b17706395918dcced
+PASS: Keil target 0 errors / 0 warnings; no board flash or physical validation performed

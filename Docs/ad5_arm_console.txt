@@ -1,0 +1,29 @@
+Tea Sense 固件：0.9.0-dev，协议：V2，标定：baseline-1
+气温：19.4 ℃，空气湿度：70.8 %RH
+光照强度：1249 lx
+PM2.5：22 μg/m³，PM10：23 μg/m³
+大气压力：103.73 kPa
+AD5_SAMPLE,seq=11,t_ms=1000,channel=AD5,adc_raw=0,status=OK
+AD5_SAMPLE,seq=21,t_ms=2000,channel=AD5,adc_raw=0,status=OK
+土壤湿度：数据无效，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00
+AD5_SAMPLE,seq=31,t_ms=3000,channel=AD5,adc_raw=65535,status=OK
+AD5_SAMPLE,seq=41,t_ms=4000,channel=AD5,adc_raw=65535,status=OK
+AD5_SAMPLE,seq=51,t_ms=5000,channel=AD5,adc_raw=65535,status=OK
+AD5_SAMPLE,seq=71,t_ms=7000,channel=AD5,adc_raw=NA,status=ADC_POLL_FAILED,stage=POLL,hal=HAL_TIMEOUT,prepare=HAL_OK,config=HAL_OK,stop=HAL_ERROR
+AD5_SAMPLE,seq=81,t_ms=8000,channel=AD5,adc_raw=15700,status=OK
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00
+AD5_SAMPLE,seq=91,t_ms=9000,channel=AD5,adc_raw=15700,status=OK
+AD5_SAMPLE,seq=101,t_ms=10000,channel=AD5,adc_raw=15700,status=OK
+气温：19.4 ℃，空气湿度：数据无效
+光照强度：1249 lx
+AD5_SAMPLE,seq=111,t_ms=11000,channel=AD5,adc_raw=15700,status=OK
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00
+AD5_SAMPLE,seq=121,t_ms=12000,channel=AD5,adc_raw=15700,status=OK
+AD5_SAMPLE,seq=131,t_ms=13000,channel=AD5,adc_raw=15700,status=OK
+AD5_SAMPLE,seq=141,t_ms=14000,channel=AD5,adc_raw=15700,status=OK
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00
+AD5_SAMPLE,seq=151,t_ms=15000,channel=AD5,adc_raw=15700,status=OK
+AD5_SAMPLE,seq=161,t_ms=16000,channel=AD5,adc_raw=15700,status=OK
+AD5_SAMPLE,seq=171,t_ms=17000,channel=AD5,adc_raw=15700,status=OK
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00
+AD5_SAMPLE,seq=181,t_ms=18000,channel=AD5,adc_raw=15700,status=OK

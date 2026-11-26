@@ -1,0 +1,5 @@
+fastapi==0.141.1
+uvicorn==0.52.1
+websockets==16.0
+pydantic==2.13.4
+PyMySQL==1.2.4

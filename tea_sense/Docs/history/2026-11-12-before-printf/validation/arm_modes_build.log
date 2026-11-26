@@ -1,0 +1,8 @@
+Program Size: Code=16204 RO-data=1168 RW-data=32 ZI-data=2408  
+PASS: mode0_uart compiled and linked; temporary verification image only
+Program Size: Code=17948 RO-data=1176 RW-data=40 ZI-data=2408  
+PASS: mode1_adc_raw compiled and linked; temporary verification image only
+Program Size: Code=18068 RO-data=1176 RW-data=40 ZI-data=2408  
+PASS: mode2_board_config compiled and linked; temporary verification image only
+Program Size: Code=18608 RO-data=1196 RW-data=40 ZI-data=2408  
+PASS: mode2_conversion_branch compiled and linked; temporary verification image only

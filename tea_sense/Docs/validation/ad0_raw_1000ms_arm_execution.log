@@ -1,0 +1,4 @@
+Program Size: Code=7008 RO-data=728 RW-data=72 ZI-data=2440  
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: immediate CRLF output, raw zero, failure/NA, write failure recovery and direct printf
+PASS: one ADC read per period, no runtime malloc; CPU emulation only, no board validation

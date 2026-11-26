@@ -1,0 +1,6 @@
+Assertion failed!
+
+Program: C:\Users\15995\AppData\Local\Temp\tmpqs9u2qvk\2.exe
+File: D:\12-Project\1-EC-Project\tea_sense\Tests\stabilization_cases.h, Line 12
+
+Expression: App_GetDiagnostics()->dtu_tx_errors==1U

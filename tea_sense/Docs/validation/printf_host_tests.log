@@ -1,0 +1,7 @@
+auto_direction
+PASS: raw acquisition, errors, wrap-safe schedule, printf/sys_write path, timeouts and direction
+short_hardware_timeouts
+PASS: raw acquisition, errors, wrap-safe schedule, printf/sys_write path, timeouts and direction
+manual_fake_gpio
+PASS: raw acquisition, errors, wrap-safe schedule, printf/sys_write path, timeouts and direction
+PASS: unconfirmed manual mode is blocked at compile time

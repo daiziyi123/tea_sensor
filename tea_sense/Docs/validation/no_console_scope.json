@@ -1,0 +1,41 @@
+{
+  "production_changes": [
+    "App/Src/app_main.c",
+    "App/Src/app_weather.c",
+    "Bsp/Src/bsp_console.c"
+  ],
+  "protected_files_byte_identical": 52,
+  "cloud_upload_adc_coefficients_core_uart_ioc_mdk_config_preserved": true,
+  "old_native_test_assertion_counts_preserved": true,
+  "modified_files": [
+    "App/Src/app_main.c",
+    "App/Src/app_weather.c",
+    "Bsp/Src/bsp_console.c",
+    "Docs/code_architecture.md",
+    "Docs/integration_v2.md",
+    "Tests/ad5_cases.h",
+    "Tests/adc_raw_cases.h",
+    "Tests/check_architecture.py",
+    "Tests/check_arm_build.py",
+    "Tests/check_arm_printf.py",
+    "Tests/dtu_host_test.c",
+    "Tests/dtu_window_cases.h",
+    "Tests/host_stdio.c",
+    "Tests/integration_cases.h",
+    "Tests/ph_cases.h",
+    "Tests/rain_cases.h",
+    "Tests/soil_host_test.c",
+    "Tests/stabilization_cases.h",
+    "Tests/weather_cases.h"
+  ],
+  "tests": {
+    "host": "passed: 5 variants x 2 programs plus existing additional checks",
+    "architecture": "passed",
+    "arm_build": "0 errors / 0 warnings; console printf/transport absent from linked symbols",
+    "c_tcp_sqlite_api_csv_ws_ack": "passed: 24 frames / 720 sample rounds",
+    "optional_arm_execution": "not run: existing temporary Unicorn package is not importable"
+  },
+  "flashed": false,
+  "server_code_modified": false,
+  "production_database_modified": false
+}

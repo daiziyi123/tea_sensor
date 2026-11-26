@@ -1,0 +1,75 @@
+D:\12-Project\1-EC-Project\tea_sense_server\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_existing_destination_and_same_source_protected (test_backup.BackupTests.test_existing_destination_and_same_source_protected) ... ok
+test_invalid_deadline_does_not_create_destination (test_backup.BackupTests.test_invalid_deadline_does_not_create_destination) ... ok
+test_invalid_source_and_missing_path (test_backup.BackupTests.test_invalid_source_and_missing_path) ... ok
+test_live_wal_backup_and_temp_restore (test_backup.BackupTests.test_live_wal_backup_and_temp_restore) ... ok
+test_invalid_and_zero_coordinates_and_time (test_gps.GpsParsingTests.test_invalid_and_zero_coordinates_and_time) ... ok
+test_observed_samples_utc_order_and_beijing (test_gps.GpsParsingTests.test_observed_samples_utc_order_and_beijing) ... ok
+test_private_settings_validation_and_no_key_requirement_bypass (test_gps.GpsParsingTests.test_private_settings_validation_and_no_key_requirement_bypass) ... ok
+test_stream_every_byte_boundary_crlf_and_escaped_brackets (test_gps.GpsParsingTests.test_stream_every_byte_boundary_crlf_and_escaped_brackets) ... ok
+test_stream_length_limit_and_incomplete_state (test_gps.GpsParsingTests.test_stream_length_limit_and_incomplete_state) ... ok
+test_duplicate_late_conflict_errors_and_independent_ages (test_gps.GpsStorageTests.test_duplicate_late_conflict_errors_and_independent_ages) ... ok
+test_migration_restart_and_backup_restore_preserve_sensor_history (test_gps.GpsStorageTests.test_migration_restart_and_backup_restore_preserve_sensor_history) ... ok
+test_duplicate_does_not_refresh_fix_and_sensor_online_is_separate (test_gps.GpsTcpTests.test_duplicate_does_not_refresh_fix_and_sensor_online_is_separate) ... ok
+test_location_endpoint_auth_and_legacy_v1_does_not_authenticate_gps (test_gps.GpsTcpTests.test_location_endpoint_auth_and_legacy_v1_does_not_authenticate_gps) ... GPS rejected device=unassociated reason=before_auth
+ok
+test_malformed_native_diagnostics_and_sensors_keep_working (test_gps.GpsTcpTests.test_malformed_native_diagnostics_and_sensors_keep_working) ... GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+ok
+test_mixed_no_newline_fragments_gps_before_auth_and_no_gps_ack (test_gps.GpsTcpTests.test_mixed_no_newline_fragments_gps_before_auth_and_no_gps_ack) ... GPS rejected device=unassociated reason=before_auth
+ok
+test_unfinished_object_deadline_and_oversized_object (test_gps.GpsTcpTests.test_unfinished_object_deadline_and_oversized_object) ... ok
+test_unknown_mismatch_reconnection_and_bad_token (test_gps.GpsTcpTests.test_unknown_mismatch_reconnection_and_bad_token) ... GPS rejected device=demo_gps_001 reason=unknown_imei
+GPS rejected device=demo_gps_001 reason=binding_mismatch
+GPS rejected device=unassociated reason=before_auth
+ok
+test_committed_location_event_and_restart_api_recovery (test_gps.GpsWebSocketTests.test_committed_location_event_and_restart_api_recovery) ... GPS rejected device=demo_gps_001 reason=invalid
+ok
+test_cached_identity_new_equal_sample_failure_and_stale (test_rain.RainTests.test_cached_identity_new_equal_sample_failure_and_stale) ... ok
+test_legacy_ten_missing_rain_has_no_point_or_zero (test_rain.RainTests.test_legacy_ten_missing_rain_has_no_point_or_zero) ... ok
+test_new_eleven_frame_ws_api_csv_and_unit (test_rain.RainTests.test_new_eleven_frame_ws_api_csv_and_unit) ... ok
+test_preupgrade_payload_ids_schema_and_boot_retry_preserved (test_rain.RainTests.test_preupgrade_payload_ids_schema_and_boot_retry_preserved) ... ok
+test_rain_strict_validation_and_valid_zero (test_rain.RainTests.test_rain_strict_validation_and_valid_zero) ... ok
+test_independent_query_identities (test_sample.SampleTests.test_independent_query_identities) ... ok
+test_modes_are_strict_physical_values (test_sample.SampleTests.test_modes_are_strict_physical_values) ... ok
+test_listener_overrides_keep_validation (test_server.ConfigTests.test_listener_overrides_keep_validation) ... ok
+test_websocket_auth_and_committed_reading (test_server.LiveUpdateTests.test_websocket_auth_and_committed_reading) ... ok
+test_ack_only_after_persistence_and_no_token_storage (test_server.ServerTests.test_ack_only_after_persistence_and_no_token_storage) ... ok
+test_auth_and_public_config (test_server.ServerTests.test_auth_and_public_config) ... ok
+test_failure_data_and_valid_zero (test_server.ServerTests.test_failure_data_and_valid_zero) ... ok
+test_fragmented_and_coalesced_frames (test_server.ServerTests.test_fragmented_and_coalesced_frames) ... ok
+test_invalid_frame_then_recovery (test_server.ServerTests.test_invalid_frame_then_recovery) ... ok
+test_optional_boot_id_deduplicates_and_detects_conflict (test_server.ServerTests.test_optional_boot_id_deduplicates_and_detects_conflict) ... ok
+test_oversized_and_unterminated_frames (test_server.ServerTests.test_oversized_and_unterminated_frames) ... ok
+test_pagination_and_csv (test_server.ServerTests.test_pagination_and_csv) ... ok
+test_rate_limit (test_server.ServerTests.test_rate_limit) ... ok
+test_strict_validation_and_nonfinite (test_server.ServerTests.test_strict_validation_and_nonfinite) ... ok
+test_window_metadata_payload_and_legacy_compatibility (test_server.ServerTests.test_window_metadata_payload_and_legacy_compatibility) ... ok
+test_window_quality_failure_zero_and_diagnostics (test_server.ServerTests.test_window_quality_failure_zero_and_diagnostics) ... ok
+test_window_strict_group_validation (test_server.ServerTests.test_window_strict_group_validation) ... ok
+test_without_boot_id_seq_can_restart (test_server.ServerTests.test_without_boot_id_seq_can_restart) ... ok
+test_authenticated_idle_and_incomplete_frame_are_separate (test_three_minute.ConnectionTimingTests.test_authenticated_idle_and_incomplete_frame_are_separate) ... ok
+test_methods_partial_direction_null_and_peak (test_three_minute.ThreeMinuteTests.test_methods_partial_direction_null_and_peak) ... ok
+test_schema3_additive_migration_does_not_relabel_history (test_three_minute.ThreeMinuteTests.test_schema3_additive_migration_does_not_relabel_history) ... ok
+test_snapshot_quality_frozen_and_cached_source_not_duplicated (test_three_minute.ThreeMinuteTests.test_snapshot_quality_frozen_and_cached_source_not_duplicated) ... ok
+test_tcp_ack_api_push_and_540_seconds (test_three_minute.ThreeMinuteTests.test_tcp_ack_api_push_and_540_seconds) ... ok
+test_boot_retry_conflict_transaction_and_no_boot_upload_counts (test_v2.V2Tests.test_boot_retry_conflict_transaction_and_no_boot_upload_counts) ... ok
+test_cached_result_dedup_and_age_never_reset (test_v2.V2Tests.test_cached_result_dedup_and_age_never_reset) ... ok
+test_independent_field_failure_zero_and_no_data (test_v2.V2Tests.test_independent_field_failure_zero_and_no_data) ... ok
+test_measurement_pagination_metric_and_csv (test_v2.V2Tests.test_measurement_pagination_metric_and_csv) ... ok
+test_migration_preserves_old_ids_payload_and_is_idempotent (test_v2.V2Tests.test_migration_preserves_old_ids_payload_and_is_idempotent) ... ok
+test_new_failure_overrides_cache_and_stale_is_per_metric (test_v2.V2Tests.test_new_failure_overrides_cache_and_stale_is_per_metric) ... ok
+test_run_boundaries_wrap_reconnect_and_old_result_order (test_v2.V2Tests.test_run_boundaries_wrap_reconnect_and_old_result_order) ... ok
+test_strict_values_and_complete_fixed_keys (test_v2.V2Tests.test_strict_values_and_complete_fixed_keys) ... ok
+test_ten_values_and_public_api_csv (test_v2.V2Tests.test_ten_values_and_public_api_csv) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 4.018s
+
+OK

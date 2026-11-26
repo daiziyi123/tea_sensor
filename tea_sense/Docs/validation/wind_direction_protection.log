@@ -1,0 +1,19 @@
+Protected files checked: 1514; changed: 0
+PASS: Bsp/Core/Drivers/.ioc, soil/AD2 modules, sample/console/window config, upload protocol and private secrets unchanged
+PASS: server sources/frontend/tests/config unchanged; integration uses only temporary test database
+PASS: MDK project/IDE changes limited to one Sensors source and file numbering; other settings preserved
+PASS: DTU/init/window scheduling and AD3 raw accumulator/window printf byte-for-byte unchanged
+Changed/new source, test and documentation files (build artifacts/logs excluded):
+App\Inc\app_main.h
+App\Src\app_main.c
+Sensors\Inc\sensor_wind_direction.h
+Sensors\Src\sensor_wind_direction.c
+Tests\ad3_cases.h
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\wind_direction_cases.h
+Docs\ad3_raw_validation.md
+Docs\code_architecture.md
+Docs\wind_direction_validation.md
+MDK-ARM\tea_sense.uvoptx
+MDK-ARM\tea_sense.uvprojx

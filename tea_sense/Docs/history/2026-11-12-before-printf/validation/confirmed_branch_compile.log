@@ -1,0 +1,1 @@
+PASS: all App sources compile on ARM with confirmed-divider calculation enabled; compile only, no assumed-divider firmware generated

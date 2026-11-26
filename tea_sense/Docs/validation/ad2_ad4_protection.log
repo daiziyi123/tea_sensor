@@ -1,0 +1,26 @@
+PASS: SHA-256 audit against the complete pre-edit project manifest.
+Snapshot: C:\Users\15995\AppData\Local\Temp\tea_sense_ad2_ad4_before_jgmikjxn
+Original files hashed: 1766; protected original files unchanged: 1630.
+Intentional source/test edits: 14; refreshed generated MDK build products: 48.
+PASS: Core, Drivers, .ioc, app_config.h, bsp_config.h, private upload header, App upload/JSON, soil conversion, wind direction, weather/DTU sources unchanged.
+PASS: MDK .uvprojx/.uvoptx, startup/link configuration and all pre-existing Docs files unchanged.
+PASS: No original file removed; no changes outside the declared source/test set and generated MDK build products.
+Changed original source/test files:
+App\Inc\app_main.h
+App\Src\app_main.c
+Bsp\Inc\bsp_adc.h
+Bsp\Src\bsp_adc.c
+Sensors\Inc\sensor_wind_speed.h
+Sensors\Src\sensor_wind_speed.c
+Tests\ad3_cases.h
+Tests\check_architecture.py
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\soil_host_test.c
+Tests\stubs\stm32h7xx_hal.h
+Tests\wind_direction_cases.h
+Tests\wind_speed_cases.h
+Added source/test file: Tests\adc_raw_cases.h
+Added documentation: Docs\ad2_ad4_raw_validation.md
+Added evidence: Docs\validation\ad2_ad4_{host_tests,architecture,arm_build,arm_printf,protection}.log; ad2_ad4_arm_console.txt
+No device programming / flashing performed.

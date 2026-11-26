@@ -1,0 +1,14 @@
+PASS: 1489 protected Core/Bsp/Drivers/ioc/MDK/period files SHA256 unchanged
+PASS: 1000 ms configuration, AD0/PB1/ADC1 Channel 5, clock, ADC divider and sampling time unchanged
+PASS: ADC calibration, timeout, acquisition/cleanup errors and USART2 printf retarget unchanged
+PASS: fixed raw endpoints 436/31146; one raw conversion definition and one ADC acquisition per SensorSoil_Read
+PASS: old soil voltage/gain conversion removed; no VREF compensation in App or Sensors
+PASS: production/test changes restricted to the six intended files
+CHANGED App/Src/app_main.c
+CHANGED Sensors/Inc/sensor_soil.h
+CHANGED Sensors/Src/sensor_soil.c
+CHANGED Tests/check_arm_printf.py
+CHANGED Tests/run_host_tests.py
+CHANGED Tests/soil_host_test.c
+SHA256 MDK-ARM/tea_sense/tea_sense.hex 67f6b06f2715f2fd5db89a5a5fd8939103ce347c036bf46ef0e055febbd0e77d
+SHA256 MDK-ARM/tea_sense/tea_sense.axf 3aaa232a295980c9aa19bd5bb508f781318ee79b02abbe366cd2e1218f1d7efb

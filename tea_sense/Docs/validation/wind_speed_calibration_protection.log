@@ -1,0 +1,25 @@
+PASS: SHA-256 audit against the complete pre-edit project manifest.
+Snapshot: C:\Users\15995\AppData\Local\Temp\tea_sense_wind_cal_before_677xmhbv
+Original files hashed: 1774; intentional original source/test/doc edits: 12; refreshed generated MDK files: 48.
+PASS: Bsp/Core/Drivers/.ioc unchanged; ADC channel sequence, period, clock and initialization calibration unchanged.
+PASS: bsp_config.h including VREF measurement state, app_config.h, App header, upload/JSON/private key and soil/wind-direction/weather/DTU production sources unchanged.
+PASS: MDK .uvprojx/.uvoptx/startup/link configuration and all pre-existing validation artifacts unchanged.
+PASS: No original file removed; no source/config changes outside the declared set.
+PASS: ARM UART output byte comparison: AD2 only appends input_mv/wind_speed_mps/range; AD4/soil/direction/weather records unchanged.
+PASS: 43 real Arm-library / fake-HAL console records use CRLF; no bare LF or CRCRLF.
+Changed original source/test/doc files:
+App\Src\app_main.c
+Docs\code_architecture.md
+Sensors\Inc\sensor_wind_speed.h
+Sensors\Src\sensor_wind_speed.c
+Tests\ad3_cases.h
+Tests\adc_raw_cases.h
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\soil_host_test.c
+Tests\weather_cases.h
+Tests\wind_direction_cases.h
+Tests\wind_speed_cases.h
+Added document: Docs\wind_speed_calibration_validation.md
+Added evidence: Docs\validation\wind_speed_calibration_{host,architecture,arm_build,arm_printf,protection}.log; wind_speed_calibration_arm_console.txt
+No flashing or device programming performed.

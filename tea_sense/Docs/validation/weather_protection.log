@@ -1,0 +1,28 @@
+Protected files checked after user CubeMX regeneration: 1511; changed: 0
+PASS: regenerated Core/.ioc, Drivers, original sensor/ADC/console modules, secrets and soil JSON/server unchanged
+PASS: App main differs only by weather include/init/process; all prior sampling/windows/printf/upload code preserved
+PASS: USART6 implementation differs only by weather include and four explicit HAL callback dispatch branches
+PASS: original App/Bsp configuration values unchanged; only weather parameter blocks added
+PASS: MDK adds exactly three sources; prior source options, include paths and target settings unchanged
+Changed/new source/tests/docs (build outputs/logs excluded):
+App\Inc\app_config.h
+App\Inc\app_weather.h
+App\Src\app_main.c
+App\Src\app_weather.c
+Bsp\Inc\bsp_config.h
+Bsp\Inc\bsp_weather_rs485.h
+Bsp\Src\bsp_dtu.c
+Bsp\Src\bsp_weather_rs485.c
+Sensors\Inc\sensor_weather.h
+Sensors\Src\sensor_weather.c
+Tests\check_architecture.py
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\soil_host_test.c
+Tests\stubs\stm32h7xx_hal.h
+Tests\stubs\usart.h
+Tests\weather_cases.h
+Docs\code_architecture.md
+Docs\weather_rs485_validation.md
+MDK-ARM/tea_sense.uvprojx
+MDK-ARM/tea_sense.uvoptx

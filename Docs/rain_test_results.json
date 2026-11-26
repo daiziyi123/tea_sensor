@@ -1,0 +1,145 @@
+[
+  {
+    "test": "host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "started_beijing": "2026-11-15T22:39:07.328008+08:00",
+    "seconds": 22.062,
+    "exit_code": 0,
+    "log": "Docs/rain_host.log"
+  },
+  {
+    "test": "architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "started_beijing": "2026-11-15T22:39:07.329009+08:00",
+    "seconds": 0.14,
+    "exit_code": 0,
+    "log": "Docs/rain_architecture.log"
+  },
+  {
+    "test": "server",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "started_beijing": "2026-11-15T22:39:07.329009+08:00",
+    "seconds": 3.359,
+    "exit_code": 0,
+    "log": "Docs/rain_server.log"
+  },
+  {
+    "test": "wire",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "Tests/check_server_upload.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "started_beijing": "2026-11-15T22:39:07.330011+08:00",
+    "seconds": 2.547,
+    "exit_code": 0,
+    "log": "Docs/rain_wire.log"
+  },
+  {
+    "test": "node",
+    "command": [
+      "node",
+      "tests/test_dashboard.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "started_beijing": "2026-11-15T22:39:07.461778+08:00",
+    "seconds": 0.063,
+    "exit_code": 0,
+    "log": "Docs/rain_node.log"
+  },
+  {
+    "test": "node_syntax",
+    "command": [
+      "node",
+      "--check",
+      "web/app.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "started_beijing": "2026-11-15T22:39:07.527546+08:00",
+    "seconds": 0.047,
+    "exit_code": 0,
+    "log": "Docs/rain_node_syntax.log"
+  },
+  {
+    "test": "arm_build",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_build.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "started_beijing": "2026-11-15T22:39:08.702427+08:00",
+    "seconds": 6.906,
+    "exit_code": 0,
+    "log": "Docs/rain_arm_build_check.log"
+  },
+  {
+    "test": "arm_cpu",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_printf.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "started_beijing": "2026-11-15T22:39:15.599155+08:00",
+    "seconds": 3.625,
+    "exit_code": 0,
+    "log": "Docs/rain_arm_cpu.log"
+  },
+  {
+    "test": "isolated_host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "C:\\Users\\15995\\AppData\\Local\\Temp\\tea_rain_package_l75yhvib\\isolated\\tea_sense",
+    "started_beijing": "2026-11-15T22:41:29.431578+08:00",
+    "seconds": 22.438,
+    "exit_code": 0,
+    "log": "Docs/rain_isolated_host.log"
+  },
+  {
+    "test": "isolated_architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "C:\\Users\\15995\\AppData\\Local\\Temp\\tea_rain_package_l75yhvib\\isolated\\tea_sense",
+    "started_beijing": "2026-11-15T22:41:51.864793+08:00",
+    "seconds": 0.312,
+    "exit_code": 0,
+    "log": "Docs/rain_isolated_architecture.log"
+  },
+  {
+    "test": "package_fixtures",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "Tools",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project",
+    "started_beijing": "2026-11-15T22:43:26.573402+08:00",
+    "seconds": 1.047,
+    "exit_code": 0,
+    "log": "Docs/rain_package_tests.log"
+  }
+]

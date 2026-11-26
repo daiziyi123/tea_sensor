@@ -1,0 +1,7 @@
+Program Size: Code=23516 RO-data=2324 RW-data=136 ZI-data=4880  
+ARM CPU / fake HAL USART2 sample: t_ms=1000,channel=AD3,pin=PA5,adc_channel=19,adc_raw=23456,status=OK
+ARM CPU / fake HAL USART2 window: AD3_WINDOW,window_end_ms=3000,sample_count=30,valid_count=30,adc_raw_min=0,adc_raw_max=23456,adc_raw_mean=15637.33,error_count=0,cleanup_errors=0,prepare_errors=0,config_errors=0,cal_failed=0,start_failed=0,poll_failed=0,stop_failed=0,raw_range=0,last_error=NONE,last_stage=NONE,hal=NA,prepare=NA,config=NA,stop=NA
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 100ms acquisition, 1s printf, 3s trimmed windows, fractional mean conversion, failure/NA and write recovery
+PASS: 91 complete rounds / 273 explicit 5/3/19 selections; AD3 plain mean/two decimals/valid zero and full scale; no runtime malloc; CPU emulation only
+PASS: USART6 receive armed before TX; production receive callback/ring/main-loop JSON ACK alongside soil printf

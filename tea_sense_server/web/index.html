@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tea Sense · 茶园设备监测</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script defer src="/assets/app.js"></script>
+</head>
+
+<body>
+  <aside><a class="brand" href="/">◒ <span>Tea Sense<small>茶园环境观测</small></span></a>
+    <nav><button data-page="overview" class="active">设备监测</button><button data-page="history">历史记录</button>
+      <button data-page="settings">设置</button><button data-page="guide">接入说明</button>
+    </nav>
+    <div class="sidebar-foot">十一项环境指标<br>真实采集 · 独立更新<br><span>土壤湿度为相对湿润度</span></div>
+  </aside>
+  <main>
+    <header>
+      <div class="status-pill" id="online-badge"><span class="dot"></span><span class="label">设备在线</span></div>
+      <div class="header-state"><small>最后接收 <span id="last-seen">—</span></small></div>
+    </header>
+    <p id="notice" class="notice" hidden></p>
+    <section id="auth-box" class="notice" hidden>需要网页访问密钥。<button id="auth-open" class="button">输入 VIEW_TOKEN</button>
+    </section>
+    <section id="page-overview">
+      <div class="section-heading">
+        <h2>田间主指标</h2>
+      </div>
+      <div id="main-cards" class="cards main-cards"></div>
+      <div class="section-heading">
+        <h2>气象环境</h2><span>各项按实际查询独立更新</span>
+      </div>
+      <div id="weather-cards" class="cards weather-cards"></div>
+
+      <article id="location-card" class="panel location-card" aria-labelledby="location-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="location-title">设备位置</h2>
+            <p>独立 GPS 定位 · 保留最后已知位置</p>
+          </div>
+          <span id="location-state" class="badge">暂无定位</span>
+        </div>
+        <div id="location-map" class="location-map" role="img" aria-label="设备 GPS 位置地图">
+          <div class="location-map-empty" id="location-map-empty">暂无定位数据</div>
+        </div>
+        <dl class="location-coordinates">
+          <div><dt>经度</dt><dd id="location-longitude">—</dd></div>
+          <div><dt>纬度</dt><dd id="location-latitude">—</dd></div>
+        </dl>
+        <dl class="location-details">
+          <div><dt>定位时间（北京时间）</dt><dd id="location-fix-time">—</dd></div>
+          <div><dt>距最后有效定位</dt><dd id="location-fix-age">—</dd></div>
+          <div><dt>最近位置报文接收于</dt><dd id="location-received-age">—</dd></div>
+          <div><dt>定位来源</dt><dd id="location-source">—</dd></div>
+          <div><dt>坐标基准</dt><dd id="location-coordinate-system">—</dd></div>
+        </dl>
+        <p id="location-error" class="notice" hidden></p>
+      </article>
+
+      <article class="panel">
+        <div class="section-heading chart-head">
+          <div>
+            <h2 id="chart-title">土壤湿度趋势</h2>
+            <p id="chart-subtitle">服务器接收时间 · 仅实际测量点</p>
+          </div>
+          <div class="chart-controls"><label>显示模块 <select id="metric"></select></label><span
+              id="chart-count"></span><button id="chart-reset" class="button" title="重置缩放">重置</button>
+          </div>
+        </div>
+        <div id="chart" class="chart"></div>
+      </article>
+      <div class="global-stats"><span>上报记录 <b id="total">—</b></span><span>测量点 <b
+            id="measurement-count">—</b></span><span>设备 <b id="device-count">—</b></span><span>TCP 连接 <b
+            id="connections">—</b></span><span id="updated"></span></div>
+      <article class="panel">
+        <div class="section-heading">
+          <h2>最近测量</h2>
+          <button id="all-records" class="button">全部历史</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>接收时间</th>
+                <th>指标</th>
+                <th>物理值 / 单位</th>
+                <th>质量</th>
+                <th>源结果编号 / 时刻</th>
+              </tr>
+            </thead>
+            <tbody id="recent-body"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <section id="page-history" hidden>
+      <article class="panel">
+        <div class="section-heading">
+          <h2>测量历史</h2>
+          <div class="chart-controls"><label>指标 <select id="history-metric"></select></label><button
+              id="history-refresh" class="button">刷新历史</button></div>
+        </div>
+        <p>沿用当前设备和范围；每页100条实际测量，气象缓存不重复计点。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>接收时间</th>
+                <th>指标</th>
+                <th>物理值 / 单位</th>
+                <th>质量</th>
+                <th>源结果编号 / 时刻</th>
+              </tr>
+            </thead>
+            <tbody id="history-body"></tbody>
+          </table>
+        </div>
+        <div class="pagination"><span id="history-summary"></span><button id="history-more" class="button">加载更多</button>
+        </div>
+      </article>
+    </section>
+    <section id="page-settings" hidden>
+      <article class="panel settings">
+        <div class="section-heading">
+          <h2>设备与数据范围</h2><span>同时影响设备监测、历史记录与导出</span>
+        </div>
+        <div class="setting-row">
+          <div>
+            <h3>当前设备</h3>
+            <p>优先选择真实设备；模拟设备以 demo_ 开头，需主动选择。</p>
+          </div>
+          <div class="setting-controls"><label>设备 <select id="device"></select></label><span id="device-kind"
+              class="badge"></span></div>
+        </div>
+        <div class="setting-row">
+          <div>
+            <h3>时间范围</h3>
+            <p>趋势、最近测量、历史分页与导出都使用此范围。</p>
+          </div>
+          <div class="setting-controls"><label>范围 <select id="hours">
+                <option value="1">1 小时</option>
+                <option value="6">6 小时</option>
+                <option value="24" selected>24 小时</option>
+                <option value="168">7 天</option>
+              </select></label><button id="export" class="button">导出 CSV</button></div>
+        </div>
+      </article>
+      <article class="panel settings">
+        <div class="section-heading">
+          <h2>连接与显示</h2><span>实时状态、网页访问与全屏</span>
+        </div>
+        <div class="setting-row">
+          <div>
+            <h3>数据状态</h3>
+            <p>显示最近一次采集值及时间，收到新数据后自动更新。</p>
+          </div>
+          <div class="setting-controls"><span id="fresh-state" class="badge">等待设备</span><span id="ws-state"
+              class="badge">网页推送：连接中</span></div>
+        </div>
+        <div class="setting-row">
+          <div>
+            <h3>网页访问</h3>
+            <p id="view-auth-setting">VIEW_TOKEN 仅保存在当前标签页会话，不放入 URL。</p>
+          </div>
+          <div class="setting-controls"><button id="settings" class="button">访问设置</button><button id="fullscreen"
+              class="button">全屏</button></div>
+        </div>
+      </article>
+    </section>
+    <section id="page-guide" hidden>
+      <article class="panel guide">
+        <h2>采样 → 三分钟统计包 → 入库 → 网页</h2>
+        <p>五路模拟量保持每100ms采集，每180秒统一上传。土壤湿度与pH取最近约5秒的有效中位值；风速取三分钟算术平均并附带采样最大风速；风向采用有风样本圆周平均；雨强按真实时间加权，不是累计雨量。</p>
+        <p>气象按10/30/60秒独立查询，显示最近有效结果及采集时间。合法0会保留，未采集到有效数值时显示"—"。静风与方向不稳定时不显示方向角。</p>
+        <p>等待下一包或网页刷新失败时，保留已经收到的测量值。地图保留最近一次有效定位，并显示定位时间。</p>
+        <p>历史三秒窗口与旧记录保留原来的含义，统计方式只在有元数据的新记录上显示。CSV保留方法、覆盖和缓存信息；不导出原始AD或私有密钥。模拟设备以demo_开头，需主动选择。</p>
+        <p>所有映射仍为现有电气标定，统计阈值为本项目工程初值。雨强无雨零点、标准物理精度与真正整机低功耗仍待实测。设备tick是上电毫秒，时间轴采用服务器接收时间。</p>
+        <pre id="example-json"></pre>
+      </article>
+    </section>
+    <footer>Tea Sense · 数据有效不代表作物健康 · <span id="current-device"></span></footer>
+  </main>
+  <dialog id="settings-dialog">
+    <form id="settings-form">
+      <h2>网页访问设置</h2>
+      <p>VIEW_TOKEN仅保存于当前标签页会话，不放入URL。</p><input id="view-token" type="password" autocomplete="off" aria-label="网页访问密钥">
+      <div class="pagination"><button type="button" id="settings-close" class="button">关闭</button><button
+          class="button primary">保存并连接</button></div>
+    </form>
+  </dialog>
+</body>
+
+</html>

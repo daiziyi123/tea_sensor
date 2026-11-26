@@ -1,0 +1,310 @@
+{
+  "delivery_date_client": "2026-11-15",
+  "scope": "AD5 raw capture/USART2 only; no rainfall/voltage conversion or upload",
+  "hardware": {
+    "terminal": "AD5/AIN5",
+    "pin": "PA3",
+    "adc": "ADC1",
+    "channel": 15,
+    "label": "RAIN_AD5",
+    "gpio": "Analog/NOPULL",
+    "former_PE15_pulse_exti_removed": true,
+    "generated_files_modified": false
+  },
+  "sampling": {
+    "round_period_ms": 100,
+    "order": [
+      5,
+      3,
+      19,
+      18,
+      15
+    ],
+    "print_period_ms": 1000,
+    "window_members_unchanged": [
+      "AD0",
+      "AD2",
+      "AD3",
+      "AD4"
+    ]
+  },
+  "baseline": {
+    "host_exit_code": 0,
+    "architecture_exit_code": 1,
+    "architecture_reason": "Obsolete assertion required removed PE15 pulse; replaced by strict PA3/AD5 and EXTI-removal checks"
+  },
+  "tests": [
+    {
+      "test": "host",
+      "command": [
+        "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "Tests/run_host_tests.py"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:39.774350+00:00",
+      "ended_utc": "2026-11-15T12:44:57.035677+00:00",
+      "log": "Docs/ad5_host.log"
+    },
+    {
+      "test": "architecture",
+      "command": [
+        "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "Tests/check_architecture.py"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:57.035677+00:00",
+      "ended_utc": "2026-11-15T12:44:57.178564+00:00",
+      "log": "Docs/ad5_architecture.log"
+    },
+    {
+      "test": "arm_build",
+      "command": [
+        "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "Tests/check_arm_build.py"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:57.178564+00:00",
+      "ended_utc": "2026-11-15T12:45:03.182076+00:00",
+      "log": "Docs/ad5_arm_build.log"
+    },
+    {
+      "test": "arm_cpu",
+      "command": [
+        "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "Tests/check_arm_printf.py"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:45:03.182076+00:00",
+      "ended_utc": "2026-11-15T12:45:06.878063+00:00",
+      "log": "Docs/ad5_arm_cpu.log"
+    },
+    {
+      "test": "wire",
+      "command": [
+        "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+        "Tests/check_server_upload.py",
+        "--server-root",
+        "D:\\12-Project\\1-EC-Project\\tea_sense_server"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:45:06.878063+00:00",
+      "ended_utc": "2026-11-15T12:45:09.035554+00:00",
+      "log": "Docs/ad5_wire.log"
+    },
+    {
+      "test": "server",
+      "command": [
+        "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:39.778349+00:00",
+      "ended_utc": "2026-11-15T12:44:42.984616+00:00",
+      "log": "Docs/ad5_server.log"
+    },
+    {
+      "test": "node_syntax",
+      "command": [
+        "node",
+        "--check",
+        "web/app.js"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:42.984616+00:00",
+      "ended_utc": "2026-11-15T12:44:43.190799+00:00",
+      "log": "Docs/ad5_node_syntax.log"
+    },
+    {
+      "test": "node",
+      "command": [
+        "node",
+        "tests/test_dashboard.js"
+      ],
+      "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+      "exit_code": 0,
+      "started_utc": "2026-11-15T12:44:43.190799+00:00",
+      "ended_utc": "2026-11-15T12:44:43.249492+00:00",
+      "log": "Docs/ad5_node.log"
+    }
+  ],
+  "binaries": [
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense/tea_sense.hex",
+      "sha256": "967d404bf3a69ad2a3a455f2f8bfa456b8d8e82818e610da08f194d205192be4",
+      "size": 133137
+    },
+    {
+      "path": "tea_sense/MDK-ARM/tea_sense/tea_sense.axf",
+      "sha256": "48375f36430a6d79f558157079590935830be405c4fd783410ad0ae23b0a8b93",
+      "size": 1889760
+    }
+  ],
+  "application_emulated_stack_bytes": 656,
+  "configured_stack_bytes": 1024,
+  "protected_current_baseline_files": 1563,
+  "private_config_unchanged": true,
+  "server_and_frontend_unchanged": true,
+  "adc_driver_only_additional_channel_case": true,
+  "window_weather_snapshot_functions_unchanged": true,
+  "modified_files": [
+    "Docs/README.md",
+    "Docs/acceptance_records.md",
+    "Docs/device_calibration_register.md",
+    "Docs/protocol_v2.md",
+    "Docs/wiring_power_interfaces.md",
+    "README.md",
+    "integration_notes.md",
+    "tea_sense/App/Inc/app_config.h",
+    "tea_sense/App/Inc/app_diagnostics.h",
+    "tea_sense/App/Src/app_main.c",
+    "tea_sense/Bsp/Inc/bsp_adc.h",
+    "tea_sense/Bsp/Src/bsp_adc.c",
+    "tea_sense/Docs/code_architecture.md",
+    "tea_sense/Docs/integration_v2.md",
+    "tea_sense/Docs/sensor_interface_plan.md",
+    "tea_sense/Tests/ad3_cases.h",
+    "tea_sense/Tests/adc_raw_cases.h",
+    "tea_sense/Tests/arm_integration_main.c",
+    "tea_sense/Tests/check_architecture.py",
+    "tea_sense/Tests/check_arm_printf.py",
+    "tea_sense/Tests/dtu_host_test.c",
+    "tea_sense/Tests/soil_host_test.c",
+    "tea_sense/Tests/stubs/stm32h7xx_hal.h",
+    "tea_sense/Tests/wind_direction_cases.h"
+  ],
+  "added_source_documents": [
+    "tea_sense/Tests/ad5_cases.h",
+    "Docs/ad5_raw_validation.md"
+  ],
+  "changed_file_hashes": [
+    {
+      "path": "Docs/README.md",
+      "sha256": "8713d4cbd01b1b540ef239cf9786c460cae9ac431fe9429e965f97b4c396182b"
+    },
+    {
+      "path": "Docs/acceptance_records.md",
+      "sha256": "74e9f6104ff9cca51a1b9baaf61bb55a2ee83880e1139bd6f89537633f8b5bf5"
+    },
+    {
+      "path": "Docs/ad5_raw_validation.md",
+      "sha256": "d76f300f847f8cd362987e262d7c8ff9e2aacd9b92531ce0ee30720ccd4a5051"
+    },
+    {
+      "path": "Docs/device_calibration_register.md",
+      "sha256": "ee3929f03abef546328e935105642da3a736ed191b96e67331f996398c7a0a72"
+    },
+    {
+      "path": "Docs/protocol_v2.md",
+      "sha256": "3ca5cae14bcd39899e10a2bb0f54444f7a03b436f619e94a20c8a04f6c5cccb9"
+    },
+    {
+      "path": "Docs/wiring_power_interfaces.md",
+      "sha256": "3ce18f938649141d95cae02b51ae5d35f40fbae35577fa24a7ac6df31f89737e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "31b356a26c65e4daebd431b5d87995c3eae3db6c069276af9920054bafce5f62"
+    },
+    {
+      "path": "integration_notes.md",
+      "sha256": "c62fa7000ca803ed63bf7d64d3b8199dcbbcca2ad3e5e89b975faaf81657f23b"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_config.h",
+      "sha256": "51c0188bb9095baa9d83cf9acedfb6a96e6553541b225d2cc2cfbc6563baf97b"
+    },
+    {
+      "path": "tea_sense/App/Inc/app_diagnostics.h",
+      "sha256": "1be2bc842c6c1ef58c27d0930dd5e12f06d489148e8738e54fc7d7e30d8831b3"
+    },
+    {
+      "path": "tea_sense/App/Src/app_main.c",
+      "sha256": "3e0bdcade95cc69d43b41034e1384ad57c4ce95eb28d14ea0e35271f4d5ef7e6"
+    },
+    {
+      "path": "tea_sense/Bsp/Inc/bsp_adc.h",
+      "sha256": "9bec06d1d0978976e006c5f7340db041dc1b5725838797585ad4fb65bc24bcab"
+    },
+    {
+      "path": "tea_sense/Bsp/Src/bsp_adc.c",
+      "sha256": "962c49e43d0f6fa92c84945b715a5c57a80d334b3ff68d0e193ada9ec29fd598"
+    },
+    {
+      "path": "tea_sense/Docs/code_architecture.md",
+      "sha256": "563aad88d900da2ee13477b4a9d1806870ec5e539bbe08a0e53d676ef3d07f91"
+    },
+    {
+      "path": "tea_sense/Docs/integration_v2.md",
+      "sha256": "39dd35581613d0d6c646034a8098628086b8f5f8db1af97c4b54844d4684c735"
+    },
+    {
+      "path": "tea_sense/Docs/sensor_interface_plan.md",
+      "sha256": "5b14de9854b33f081f660cd02e5d2af08d640949ef618e891d3eb4504cddbd03"
+    },
+    {
+      "path": "tea_sense/Tests/ad3_cases.h",
+      "sha256": "82df1b2425851dd78cd91e5a52a0d98cfd7cfa474154019b39ca965dddde671f"
+    },
+    {
+      "path": "tea_sense/Tests/ad5_cases.h",
+      "sha256": "8cabec0ae379ad8d3eaecd93ceaa20105b62ad6720999163e9e910083d839ea8"
+    },
+    {
+      "path": "tea_sense/Tests/adc_raw_cases.h",
+      "sha256": "503a6e3b8b552023b5b70464dc55e032fab2b03aca50f6755a2ac6b84e9fbb38"
+    },
+    {
+      "path": "tea_sense/Tests/arm_integration_main.c",
+      "sha256": "c956fdf458acf3c574dd1653291321435afbd1b8b177b0d04615333b28e5ab25"
+    },
+    {
+      "path": "tea_sense/Tests/check_architecture.py",
+      "sha256": "813acc05ab99c98e09a02d815bc776564217648c53f0106ac846af26cb598215"
+    },
+    {
+      "path": "tea_sense/Tests/check_arm_printf.py",
+      "sha256": "aed11e8639256fc5305ebbf7dec8d191adbbb8d915dae8c83094d82b6cccac8a"
+    },
+    {
+      "path": "tea_sense/Tests/dtu_host_test.c",
+      "sha256": "fa31a2514c64fc45aefb9454ec809e5606e691911dfb946fff3cbdbb4fa72daf"
+    },
+    {
+      "path": "tea_sense/Tests/soil_host_test.c",
+      "sha256": "18d05fbe7270a58a8b3bde9b61c449c4d2832ea5d5f607a11d9290b7bace4430"
+    },
+    {
+      "path": "tea_sense/Tests/stubs/stm32h7xx_hal.h",
+      "sha256": "8c03932c7424af7dfae94f3d3e3284379b0881aac1a16510088b91ef702743c6"
+    },
+    {
+      "path": "tea_sense/Tests/wind_direction_cases.h",
+      "sha256": "99ac56f8160eb73d29b532233b01db99c5111974eece516599c05b9175676479"
+    }
+  ],
+  "source_backup": "D:\\12-Project\\1-EC-Project\\ad5_backups\\before_20261115_202926",
+  "previous_release_package_unchanged": true,
+  "previous_release_package_contains_ad5": false,
+  "new_production_source_files": false,
+  "unverified": [
+    "real PA3/AD5 and multimeter alignment",
+    "actual sensor voltage/current range and rainfall relationship",
+    "real board timing/ISR stack and sensor behavior"
+  ],
+  "flashed": false,
+  "server_deployed_or_restarted": false,
+  "production_database_written": false,
+  "mdk_source_references_changed": false
+}

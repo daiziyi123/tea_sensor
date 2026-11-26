@@ -1,0 +1,13 @@
+{
+  "source": "D:\\4-横向项目\\2-茶叶物联网项目\\tea_sense_tcp_server\\tea_sense_server",
+  "target": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+  "backup": "D:\\12-Project\\1-EC-Project\\integration_backups\\integration_before_20261114",
+  "database_rows": 825,
+  "first_id": 1,
+  "last_id": 825,
+  "database_backup_api": true,
+  "ingest_token_matches": true,
+  "view_token_preserved": true,
+  "old_source_preserved": true,
+  "old_venv_not_copied": true
+}

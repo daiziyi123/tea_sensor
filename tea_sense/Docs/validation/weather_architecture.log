@@ -1,0 +1,7 @@
+PASS: flat Inc/Src layers, include boundaries, no HAL above Bsp, no cycles or writable externs
+PASS: MDK include/source/IDE paths, layer groups, no duplicates or replaced symbols in active code
+PASS: single runtime flow; removed application selector and business logging module have no active references
+PASS: CubeMX generation flags, firmware package and rain falling-edge setting
+PASS: generated USART6 IRQ/init/pins/115200-8N1 consistent; DTU uses one-byte IT RX, no GPIO/DMA/reinit
+PASS: PB1/PA6/PA5 generated analog/no-pull configuration, ADC1 single-rank baseline, explicit channel5/channel3/channel19 selection
+PASS: generated USART3/UART4 pins/4800-8N1/IRQs consistent; single HAL dispatch, fixed IT routes, no direction GPIO/DMA/reinit

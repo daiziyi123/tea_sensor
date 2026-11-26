@@ -1,0 +1,64 @@
+[
+  {
+    "test": "host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:34.458283+00:00",
+    "ended_utc": "2026-11-14T10:57:58.547658+00:00",
+    "log": "Docs/stabilization_host.log"
+  },
+  {
+    "test": "architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:58.547658+00:00",
+    "ended_utc": "2026-11-14T10:57:58.659829+00:00",
+    "log": "Docs/stabilization_architecture.log"
+  },
+  {
+    "test": "arm_build",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_build.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:58.659829+00:00",
+    "ended_utc": "2026-11-14T10:58:04.149063+00:00",
+    "log": "Docs/stabilization_arm_build.log"
+  },
+  {
+    "test": "arm_cpu",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_printf.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:58:04.149063+00:00",
+    "ended_utc": "2026-11-14T10:58:07.152952+00:00",
+    "log": "Docs/stabilization_arm_cpu.log"
+  },
+  {
+    "test": "wire",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "Tests/check_server_upload.py",
+      "--server-root",
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:58:07.152952+00:00",
+    "ended_utc": "2026-11-14T10:58:09.374928+00:00",
+    "log": "Docs/stabilization_wire.log"
+  }
+]

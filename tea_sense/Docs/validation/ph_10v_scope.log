@@ -1,0 +1,29 @@
+PASS: all 16 changed source/test/document files match the pH-only allowlist
+PASS: Tests/upload_wire_fixture.c: assertion count 14 -> 14
+PASS: Tests/check_arm_printf.py: assertion count 0 -> 0
+PASS: Tests/check_architecture.py: assertion count 4 -> 4
+PASS: Tests/arm_integration_main.c: assertion count 0 -> 0
+PASS: Tests/adc_raw_cases.h: assertion count 61 -> 61
+PASS: Tests/ad5_cases.h: assertion count 32 -> 32
+PASS: Tests/rain_cases.h: assertion count 35 -> 35
+PASS: Tests/ph_cases.h: assertion count 23 -> 35
+PASS: Tests/integration_cases.h: assertion count 47 -> 47
+PASS: Tests/soil_host_test.c: assertion count 96 -> 96
+PASS: 45 protected BSP/Core/other-sensor/config/upload/key/project files are byte-identical
+Changed files:
+App/Inc/app_version.h
+App/Src/app_main.c
+Docs/code_architecture.md
+Docs/soil_ph_validation.md
+Sensors/Inc/sensor_ph.h
+Sensors/Src/sensor_ph.c
+Tests/ad5_cases.h
+Tests/adc_raw_cases.h
+Tests/arm_integration_main.c
+Tests/check_architecture.py
+Tests/check_arm_printf.py
+Tests/integration_cases.h
+Tests/ph_cases.h
+Tests/rain_cases.h
+Tests/soil_host_test.c
+Tests/upload_wire_fixture.c

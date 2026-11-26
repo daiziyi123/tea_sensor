@@ -1,0 +1,11 @@
+test_existing_output_and_source_recursion_rejected (test_package_release.PackageTests.test_existing_output_and_source_recursion_rejected) ... ok
+test_hash_tampering_and_missing_file_rejected (test_package_release.PackageTests.test_hash_tampering_and_missing_file_rejected) ... ok
+test_junction_or_symlink_not_followed (test_package_release.PackageTests.test_junction_or_symlink_not_followed) ... ok
+test_required_source_missing_rejected (test_package_release.PackageTests.test_required_source_missing_rejected) ... ok
+test_source_and_dependencies_included_private_generated_excluded (test_package_release.PackageTests.test_source_and_dependencies_included_private_generated_excluded) ... ok
+test_zip_escape_and_extraction_overwrite_rejected (test_package_release.PackageTests.test_zip_escape_and_extraction_overwrite_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.963s
+
+OK

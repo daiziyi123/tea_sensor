@@ -1,0 +1,4 @@
+Program Size: Code=7812 RO-data=816 RW-data=72 ZI-data=2440  
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 0/436/15791/31146/65535 mapping, rounding, LOW/HIGH, failure/NA and write recovery
+PASS: one ADC read per period, no runtime malloc; CPU emulation only, no board validation

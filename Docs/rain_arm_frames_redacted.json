@@ -1,0 +1,546 @@
+[
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 1,
+    "t_ms": 3000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": null,
+        "status": "WINDOW_INSUFFICIENT",
+        "sample_seq": 1,
+        "sample_t_ms": 3000,
+        "age_ms": 0
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 3000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 3000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 3000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 3000
+      },
+      "air_humidity_rh_pct": {
+        "value": 70.8,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 3000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 300,
+        "age_ms": 2700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 2100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 2400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 2400
+      },
+      "rain_intensity_mm_min": {
+        "value": 0.0,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 3000,
+        "age_ms": 0,
+        "range": "LOW"
+      }
+    }
+  },
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 2,
+    "t_ms": 6000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": 0.0,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 6000,
+        "age_ms": 0,
+        "range": "LOW"
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 6000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 6000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 6000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 6000
+      },
+      "air_humidity_rh_pct": {
+        "value": 70.8,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 6000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 300,
+        "age_ms": 5700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 5100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 5400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 5400
+      },
+      "rain_intensity_mm_min": {
+        "value": 8.0,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 6000,
+        "age_ms": 0,
+        "range": "HIGH"
+      }
+    }
+  },
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 3,
+    "t_ms": 9000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": 60.85,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 9000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 9000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 9000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 9000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 9000
+      },
+      "air_humidity_rh_pct": {
+        "value": 70.8,
+        "status": "OK",
+        "sample_seq": 1,
+        "sample_t_ms": 0,
+        "age_ms": 9000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 2,
+        "sample_t_ms": 300,
+        "age_ms": 8700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 8100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 8400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 8400
+      },
+      "rain_intensity_mm_min": {
+        "value": 4.0,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 9000,
+        "age_ms": 0,
+        "range": "OK"
+      }
+    }
+  },
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 4,
+    "t_ms": 12000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": 60.85,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 12000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 12000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 12000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 12000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 2000
+      },
+      "air_humidity_rh_pct": {
+        "value": null,
+        "status": "INVALID_VALUE",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 2000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 10300,
+        "age_ms": 1700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 11100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 11400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 11400
+      },
+      "rain_intensity_mm_min": {
+        "value": null,
+        "status": "WINDOW_INSUFFICIENT",
+        "sample_seq": 4,
+        "sample_t_ms": 12000,
+        "age_ms": 0
+      }
+    }
+  },
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 5,
+    "t_ms": 15000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": 60.85,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 15000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 15000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 15000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 15000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 5000
+      },
+      "air_humidity_rh_pct": {
+        "value": null,
+        "status": "INVALID_VALUE",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 5000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 10300,
+        "age_ms": 4700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 14100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 14400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 14400
+      },
+      "rain_intensity_mm_min": {
+        "value": 4.0,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 15000,
+        "age_ms": 0,
+        "range": "OK"
+      }
+    }
+  },
+  {
+    "schema_version": 2,
+    "device_id": "demo_h743_001",
+    "seq": 6,
+    "t_ms": 18000,
+    "window_ms": 3000,
+    "data": {
+      "soil_moisture_pct": {
+        "value": 60.85,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 18000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_speed_mps": {
+        "value": 15.0,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 18000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "wind_direction_deg": {
+        "value": 134.83,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 18000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "soil_ph": {
+        "value": 6.0,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 18000,
+        "age_ms": 0,
+        "range": "OK"
+      },
+      "temperature_c": {
+        "value": 19.4,
+        "status": "OK",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 8000
+      },
+      "air_humidity_rh_pct": {
+        "value": null,
+        "status": "INVALID_VALUE",
+        "sample_seq": 5,
+        "sample_t_ms": 10000,
+        "age_ms": 8000
+      },
+      "light_lux": {
+        "value": 1249,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 10300,
+        "age_ms": 7700
+      },
+      "pressure_kpa": {
+        "value": 103.73,
+        "status": "OK",
+        "sample_seq": 4,
+        "sample_t_ms": 900,
+        "age_ms": 17100
+      },
+      "pm25_ug_m3": {
+        "value": 22,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 17400
+      },
+      "pm10_ug_m3": {
+        "value": 23,
+        "status": "OK",
+        "sample_seq": 3,
+        "sample_t_ms": 600,
+        "age_ms": 17400
+      },
+      "rain_intensity_mm_min": {
+        "value": 4.0,
+        "status": "OK",
+        "sample_seq": 6,
+        "sample_t_ms": 18000,
+        "age_ms": 0,
+        "range": "OK"
+      }
+    }
+  }
+]

@@ -1,0 +1,34 @@
+services:
+  tea-sense:
+    build: .
+    restart: unless-stopped
+    environment:
+      HTTP_HOST: 0.0.0.0
+      HTTP_PORT: 8000
+      TCP_HOST: 0.0.0.0
+      TCP_PORT: 9000
+      DATABASE_PATH: /srv/tea/data/tea_sense.db
+      MYSQL_DSN: ${MYSQL_DSN:-}
+      MYSQL_SSL_CA: ${MYSQL_SSL_CA:-}
+      ONLINE_SECONDS: ${ONLINE_SECONDS:-540}
+      AUTHENTICATED_IDLE_SECONDS: ${AUTHENTICATED_IDLE_SECONDS:-600}
+      GPS_IMEI_BINDINGS: ${GPS_IMEI_BINDINGS:-}
+      GPS_COORDINATE_SYSTEM: ${GPS_COORDINATE_SYSTEM:-UNKNOWN}
+      GPS_STALE_SECONDS: ${GPS_STALE_SECONDS:-540}
+      GPS_FUTURE_TOLERANCE_SECONDS: ${GPS_FUTURE_TOLERANCE_SECONDS:-300}
+      INGEST_TOKEN: ${INGEST_TOKEN:?Set INGEST_TOKEN in .env}
+      VIEW_TOKEN: ${VIEW_TOKEN:-}
+      PUBLIC_DASHBOARD: ${PUBLIC_DASHBOARD:-0}
+    ports:
+      - "9000:9000"
+      - "${WEB_BIND:-127.0.0.1}:8000:8000"
+    volumes:
+      - tea-data:/srv/tea/data
+      - ./deploy:/srv/tea/deploy:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+volumes:
+  tea-data:

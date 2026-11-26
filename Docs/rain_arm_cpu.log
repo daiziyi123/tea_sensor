@@ -1,0 +1,17 @@
+Program Size: Code=34164 RO-data=1120 RW-data=268 ZI-data=11372  
+Tea Sense 固件：0.9.1-dev，协议：V2，标定：baseline-2
+气温：19.4 ℃，空气湿度：70.8 %RH
+光照强度：1249 lx
+PM2.5：22 μg/m³，PM10：23 μg/m³
+大气压力：103.73 kPa
+土壤湿度：数据无效，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00，降雨强度：0.00 mm/min
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00，降雨强度：4.00 mm/min
+气温：19.4 ℃，空气湿度：数据无效
+光照强度：1249 lx
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00，降雨强度：采集失败
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00，降雨强度：4.00 mm/min
+土壤湿度：60.85%，风速：15.00 m/s，风向角度：134.83°，土壤 pH：6.00，降雨强度：4.00 mm/min
+PASS: real ARM/C library V2 full frames and TC/early ACK; 182 rounds / 910 explicit 5/3/19/18/15 selections / one calibration; six uploads and ACKs
+PASS: rain zero/full/qualified29/insufficient22 windows, shared Chinese/V2 values, eleven metrics and no raw records
+PASS: qualified windows, physical Chinese output, printf failure/recovery, MET four groups and independent field quality; no gas polling or runtime malloc
+Observed application CPU stack bytes: 640 PC 0x80003ae [(134218658, '_ll_udiv')] initial_sp 0x24002d78

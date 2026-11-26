@@ -1,0 +1,53 @@
+{
+  "date_beijing": "2026-11-23",
+  "firmware": "0.10.0-dev",
+  "schema_version": 2,
+  "database_schema": 4,
+  "calibration_revision": "baseline-3",
+  "protection": {
+    "generated_Core_and_ioc_unchanged": true,
+    "weather_query_scheduler_unchanged": true,
+    "gps_parser_and_json_framer_unchanged": true,
+    "all_sensor_calibration_defines_unchanged": true,
+    "private_firmware_config_unchanged": true,
+    "private_server_secrets_binding_ports_database_preserved": true,
+    "only_private_env_timing_changes": true,
+    "no_console_calls_in_App_or_Sensors": true,
+    "Bsp_configuration_only_TX_capacity_changed": true,
+    "runtime_dependencies_unchanged": true
+  },
+  "host": "5 configurations x 2 App/HAL programs, statistics unit program and capacity/configuration checks passed",
+  "server_unittest_count": 55,
+  "frontend": "node syntax + 3 suites passed",
+  "wire": "24 frames / 43200 rounds / 264 measurements through isolated TCP SQLite API CSV WS C ACK passed",
+  "arm": "fresh ARMCC5 full rebuild passed, size in tea_sense/Docs/validation/three_minute_arm.log",
+  "not_executed": [
+    "board flashing",
+    "real board/DTU/4G or long duration measurement",
+    "production database migration",
+    "cloud deployment",
+    "ARM CPU execution: Unicorn not importable",
+    "new browser visual preview: automatic approval rejected launching isolated preview; no reason provided"
+  ],
+  "commands_and_evidence": {
+    "firmware": "tea_sense/Docs/validation/three_minute_*.log",
+    "server_frontend": "tea_sense_server/validation/three_minute_*.log"
+  },
+  "serial_console": "remains disabled",
+  "dtu": "not changed; user GUI refresh180/upload180/target A only, expected +LOCATION:ON,1,180,180",
+  "arm_sizes_bytes": {
+    "code": 43764,
+    "ro": 1764,
+    "rw": 192,
+    "zi": 13024
+  },
+  "arm_harness_compile": "passed, no CPU execution",
+  "evidence_sha256": {
+    "host": "36721245840d5d18f96b4d561d7b58dad5a58eeaa0886aa4bc80914d4c5ee24d",
+    "architecture": "717022d71bf9d50e1b744c5696b91f8f0b7689b981aac566fc48ff3e48e75dd0",
+    "arm": "5b4a5d342043f70f4263b8a8705f8dec605d9ee45220d3e803874dab985f360d",
+    "wire": "2f302f9c59b0d6dad46e62f7d9d5da19e932bc1da94490d0089a7c20ed46b6ae",
+    "server": "8c35436d6ca334f55cfb5c78c1e7b848bfd1f5e326271ca2c292864dd1fe2f7e",
+    "frontend": "1fef088193252db4436e2f779788aa65a5b9c938e3a236063c1f0a7a4dd0d97e"
+  }
+}

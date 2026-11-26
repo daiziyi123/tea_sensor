@@ -1,0 +1,19 @@
+auto_direction: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+auto_direction: dtu_host_test
+PASS: ADC1 5/3/5, complete pair times/aligned windows/wrap/late, independent AD2 calibration/faults, soil JSON/ACK/IT RX/UART recovery
+calibration_independent_of_vref: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+calibration_independent_of_vref: dtu_host_test
+PASS: ADC1 5/3/5, complete pair times/aligned windows/wrap/late, independent AD2 calibration/faults, soil JSON/ACK/IT RX/UART recovery
+short_hardware_timeouts: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+short_hardware_timeouts: dtu_host_test
+PASS: ADC1 5/3/5, complete pair times/aligned windows/wrap/late, independent AD2 calibration/faults, soil JSON/ACK/IT RX/UART recovery
+manual_fake_gpio: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+manual_fake_gpio: dtu_host_test
+PASS: ADC1 5/3/5, complete pair times/aligned windows/wrap/late, independent AD2 calibration/faults, soil JSON/ACK/IT RX/UART recovery
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
+PASS: missing private key explicitly disables JSON upload

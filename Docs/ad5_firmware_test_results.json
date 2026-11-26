@@ -1,0 +1,64 @@
+[
+  {
+    "test": "host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T12:44:39.774350+00:00",
+    "ended_utc": "2026-11-15T12:44:57.035677+00:00",
+    "log": "Docs/ad5_host.log"
+  },
+  {
+    "test": "architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T12:44:57.035677+00:00",
+    "ended_utc": "2026-11-15T12:44:57.178564+00:00",
+    "log": "Docs/ad5_architecture.log"
+  },
+  {
+    "test": "arm_build",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_build.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T12:44:57.178564+00:00",
+    "ended_utc": "2026-11-15T12:45:03.182076+00:00",
+    "log": "Docs/ad5_arm_build.log"
+  },
+  {
+    "test": "arm_cpu",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_printf.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T12:45:03.182076+00:00",
+    "ended_utc": "2026-11-15T12:45:06.878063+00:00",
+    "log": "Docs/ad5_arm_cpu.log"
+  },
+  {
+    "test": "wire",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "Tests/check_server_upload.py",
+      "--server-root",
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T12:45:06.878063+00:00",
+    "ended_utc": "2026-11-15T12:45:09.035554+00:00",
+    "log": "Docs/ad5_wire.log"
+  }
+]

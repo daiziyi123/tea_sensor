@@ -1,0 +1,19 @@
+auto_direction: soil_host_test
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+auto_direction: dtu_host_test
+PASS: JSON snapshot/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+calibration_independent_of_vref: soil_host_test
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+calibration_independent_of_vref: dtu_host_test
+PASS: JSON snapshot/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+short_hardware_timeouts: soil_host_test
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+short_hardware_timeouts: dtu_host_test
+PASS: JSON snapshot/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+manual_fake_gpio: soil_host_test
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+manual_fake_gpio: dtu_host_test
+PASS: JSON snapshot/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
+PASS: missing private key explicitly disables JSON upload

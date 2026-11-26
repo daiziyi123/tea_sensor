@@ -1,0 +1,33 @@
+{
+  "backup": "D:\\12-Project\\1-EC-Project\\integration_backups\\before_rain_server_restart_20261115_225128.db",
+  "old_pid": 42748,
+  "graceful_stop_result": "{\"attached\": true, \"sent\": true, \"error\": 6, \"console_pids\": [25844, 42748, 37156, 43172]}",
+  "graceful_stop_exit": 0,
+  "launcher_pid": 95704,
+  "stdout_log": "D:\\12-Project\\1-EC-Project\\tea_sense_server\\runtime_logs\\server_20261115_225236.log",
+  "stderr_log": "D:\\12-Project\\1-EC-Project\\tea_sense_server\\runtime_logs\\server_20261115_225236_error.log",
+  "verification": {
+    "health": true,
+    "loaded_metrics": 11,
+    "rain_metric": {
+      "name": "降雨强度",
+      "unit": "mm/min",
+      "decimals": 2,
+      "period_ms": 3000,
+      "stale_ms": 9000,
+      "minimum": 0,
+      "maximum": 8,
+      "group": "main"
+    },
+    "current_frontend": true,
+    "database_check": "ok",
+    "readings_count_max_id": [
+      2973,
+      2973
+    ],
+    "measurements_count_max_id": [
+      11900,
+      11900
+    ]
+  }
+}

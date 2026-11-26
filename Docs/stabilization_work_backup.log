@@ -1,0 +1,9 @@
+test_existing_destination_and_same_source_protected (test_backup.BackupTests.test_existing_destination_and_same_source_protected) ... ok
+test_invalid_deadline_does_not_create_destination (test_backup.BackupTests.test_invalid_deadline_does_not_create_destination) ... ok
+test_invalid_source_and_missing_path (test_backup.BackupTests.test_invalid_source_and_missing_path) ... ok
+test_live_wal_backup_and_temp_restore (test_backup.BackupTests.test_live_wal_backup_and_temp_restore) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.137s
+
+OK

@@ -1,0 +1,7 @@
+PASS: existing source/config files changed only in main.c and tea_sense.uvprojx
+PASS: main.c edits exclusively inside USER CODE
+PASS: project only adds four sources and App/Inc; other target settings preserved
+PASS: tea_sense.hex checksums/EOF/reset vectors; SP=0x24000908; SHA256=034715f2646d35d717a5f465a3d76140d7597b3996629003522ca3cb2931a199
+PASS: soil_adc_raw.hex checksums/EOF/reset vectors; SP=0x24000910; SHA256=dc34e7d68405e3c8148b2aceeb9df4a43e0bdf64f05b6a9a35523d24d8e36d13
+PASS: soil_adc_voltage.hex checksums/EOF/reset vectors; SP=0x24000910; SHA256=813be67bc7dea610826589d8892043e679b061351d4b97c26e89cb417048925f
+PASS: final Keil build: 0 errors, 0 warnings

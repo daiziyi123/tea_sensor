@@ -1,0 +1,52 @@
+{
+  "baseline": "rain_backup_path.txt local pre-change snapshot",
+  "groups": {
+    "generated_core_drivers_ioc": {
+      "files": 1478,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "bsp_hardware_recovery": {
+      "files": 14,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "original_sensors_and_coefficients": {
+      "files": 10,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "coreJSON": {
+      "files": 4,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "private_configuration": {
+      "files": 2,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "upload_interfaces_weather_irq": {
+      "files": 4,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "prior_evidence": {
+      "files": 114,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    },
+    "linker_startup_RTE": {
+      "files": 128,
+      "unchanged": true,
+      "unexpected_changed_paths": []
+    }
+  },
+  "database": {
+    "action": "No production DB connection/write/restore from test scripts; fixture/temp DBs only",
+    "schema": 2,
+    "production_hash_comparison": false
+  },
+  "production_service": "No production stop/restart; only isolated18000/19000 fixtures stopped",
+  "public_report": "Private file hashes/content intentionally omitted"
+}

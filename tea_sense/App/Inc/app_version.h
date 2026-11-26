@@ -1,0 +1,6 @@
+#ifndef APP_VERSION_H
+#define APP_VERSION_H
+#define APP_FIRMWARE_VERSION "0.10.0-dev"
+#define APP_PROTOCOL_SCHEMA_VERSION 2U
+#define APP_CALIBRATION_REVISION "baseline-3"
+#endif

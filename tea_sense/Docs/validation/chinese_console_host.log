@@ -1,0 +1,35 @@
+auto_direction: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+auto_direction: dtu_host_test
+AD3 fixed-point check: raw_x100=640067,input_mv=1000,angle_deg=0.00,range=OK
+AD3 fixed-point check: raw_x100=1561418,input_mv=2498,angle_deg=134.83,range=OK
+AD3 fixed-point check: raw_x100=2192014,input_mv=3524,angle_deg=227.12,range=OK
+AD3 fixed-point check: raw_x100=3100043,input_mv=5000,angle_deg=360.00,range=OK
+PASS: ADC1 5/3/19/5; AD3 timestamps, independent plain-mean windows/NA/faults/wrap/late; AD0 JSON/ACK and uncalibrated AD2 regression
+calibration_independent_of_vref: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+calibration_independent_of_vref: dtu_host_test
+AD3 fixed-point check: raw_x100=640067,input_mv=1000,angle_deg=0.00,range=OK
+AD3 fixed-point check: raw_x100=1561418,input_mv=2498,angle_deg=134.83,range=OK
+AD3 fixed-point check: raw_x100=2192014,input_mv=3524,angle_deg=227.12,range=OK
+AD3 fixed-point check: raw_x100=3100043,input_mv=5000,angle_deg=360.00,range=OK
+PASS: ADC1 5/3/19/5; AD3 timestamps, independent plain-mean windows/NA/faults/wrap/late; AD0 JSON/ACK and uncalibrated AD2 regression
+short_hardware_timeouts: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+short_hardware_timeouts: dtu_host_test
+AD3 fixed-point check: raw_x100=640067,input_mv=1000,angle_deg=0.00,range=OK
+AD3 fixed-point check: raw_x100=1561418,input_mv=2498,angle_deg=134.83,range=OK
+AD3 fixed-point check: raw_x100=2192014,input_mv=3524,angle_deg=227.12,range=OK
+AD3 fixed-point check: raw_x100=3100043,input_mv=5000,angle_deg=360.00,range=OK
+PASS: ADC1 5/3/19/5; AD3 timestamps, independent plain-mean windows/NA/faults/wrap/late; AD0 JSON/ACK and uncalibrated AD2 regression
+manual_fake_gpio: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+manual_fake_gpio: dtu_host_test
+AD3 fixed-point check: raw_x100=640067,input_mv=1000,angle_deg=0.00,range=OK
+AD3 fixed-point check: raw_x100=1561418,input_mv=2498,angle_deg=134.83,range=OK
+AD3 fixed-point check: raw_x100=2192014,input_mv=3524,angle_deg=227.12,range=OK
+AD3 fixed-point check: raw_x100=3100043,input_mv=5000,angle_deg=360.00,range=OK
+PASS: ADC1 5/3/19/5; AD3 timestamps, independent plain-mean windows/NA/faults/wrap/late; AD0 JSON/ACK and uncalibrated AD2 regression
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
+PASS: missing private key explicitly disables JSON upload

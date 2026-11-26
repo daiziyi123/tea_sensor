@@ -1,0 +1,44 @@
+[
+  {
+    "test": "server",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:34.456285+00:00",
+    "ended_utc": "2026-11-14T10:57:37.323417+00:00",
+    "log": "Docs/stabilization_server.log"
+  },
+  {
+    "test": "node_syntax",
+    "command": [
+      "node",
+      "--check",
+      "web/app.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:37.323417+00:00",
+    "ended_utc": "2026-11-14T10:57:37.369413+00:00",
+    "log": "Docs/stabilization_node_syntax.log"
+  },
+  {
+    "test": "node",
+    "command": [
+      "node",
+      "tests/test_dashboard.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-14T10:57:37.369413+00:00",
+    "ended_utc": "2026-11-14T10:57:37.422971+00:00",
+    "log": "Docs/stabilization_node.log"
+  }
+]

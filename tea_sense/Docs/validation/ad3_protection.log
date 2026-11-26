@@ -1,0 +1,17 @@
+Protected files checked: 1506
+Changed protected files: 0
+PASS: Core/Drivers/.ioc, Sensors, private secrets/config, soil formatter, console/DTU and MDK project options unchanged
+PASS: server source/tests/frontend/data/secret configuration unchanged; no production database used
+Changed/new firmware source, tests and documents (relative to pre-task backup):
+App\Inc\app_main.h
+App\Src\app_main.c
+Bsp\Inc\bsp_adc.h
+Bsp\Src\bsp_adc.c
+Tests\ad3_cases.h
+Tests\check_architecture.py
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\soil_host_test.c
+Tests\stubs\stm32h7xx_hal.h
+Docs\ad3_raw_validation.md
+Docs\code_architecture.md

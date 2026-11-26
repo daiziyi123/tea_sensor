@@ -1,0 +1,9 @@
+uart_auto
+PASS: scheduling, formatting, ADC faults, voltage, UART errors and TC direction
+adc_raw_auto
+PASS: scheduling, formatting, ADC faults, voltage, UART errors and TC direction
+adc_voltage_auto
+PASS: scheduling, formatting, ADC faults, voltage, UART errors and TC direction
+adc_voltage_manual_fake_gpio
+PASS: scheduling, formatting, ADC faults, voltage, UART errors and TC direction
+PASS: unconfirmed manual mode is blocked at compile time

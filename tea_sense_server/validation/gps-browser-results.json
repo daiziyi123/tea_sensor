@@ -1,0 +1,32 @@
+{
+  "scope": "Isolated simulated browser validation; not real DTU or 4G evidence",
+  "ports": {
+    "http": 18763,
+    "tcp": 19763
+  },
+  "database": "temporary fixture database only",
+  "identity": "fictional IMEI and demo devices; private .env was not loaded",
+  "viewport": {
+    "width": 417,
+    "height": 708
+  },
+  "horizontal_overflow": false,
+  "console_errors_observed": [],
+  "verified": [
+    "Named longitude 114.384038 and latitude 30.491893 with six decimals",
+    "Beijing time, GPS source and UNKNOWN coordinate datum displayed",
+    "Fresh position displayed normally",
+    "Sensor uploads continued while GPS displayed stale with original coordinates/time",
+    "Latest NO_FIX error displayed alongside the preserved old position",
+    "Page reload restored last known position through overview",
+    "Switching to demo_other displayed no position and empty coordinates"
+  ],
+  "stale_fixture": "Shifted only temporary location clocks back by 240 seconds; production processing unchanged",
+  "screenshots": [
+    "gps-fresh-preview.jpg",
+    "gps-stale-preview.jpg",
+    "gps-error-preview.jpg"
+  ],
+  "real_dtu_verified": false,
+  "map_enabled": false
+}

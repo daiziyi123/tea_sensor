@@ -1,0 +1,19 @@
+auto_direction: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+auto_direction: dtu_host_test
+PASS: 3s windows/100ms acquisition/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+calibration_independent_of_vref: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+calibration_independent_of_vref: dtu_host_test
+PASS: 3s windows/100ms acquisition/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+short_hardware_timeouts: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+short_hardware_timeouts: dtu_host_test
+PASS: 3s windows/100ms acquisition/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+manual_fake_gpio: soil_host_test
+PASS: trimmed-window constants/extremes/fractional means/24-vs-23/errors, two-point full-domain bounds, ADC/printf/timeouts/direction
+manual_fake_gpio: dtu_host_test
+PASS: 3s windows/100ms acquisition/typed ACK/fragments/multi-line, timeout/wrap, ring loss/resync, UART recovery, TX/format failures and soil coexistence
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
+PASS: missing private key explicitly disables JSON upload

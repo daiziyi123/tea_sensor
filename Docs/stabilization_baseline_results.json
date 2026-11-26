@@ -1,0 +1,53 @@
+[
+  {
+    "test": "host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0
+  },
+  {
+    "test": "architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0
+  },
+  {
+    "test": "server",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0
+  },
+  {
+    "test": "node_syntax",
+    "command": [
+      "node",
+      "--check",
+      "web/app.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0
+  },
+  {
+    "test": "node",
+    "command": [
+      "node",
+      "tests/test_dashboard.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0
+  }
+]

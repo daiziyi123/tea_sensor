@@ -1,0 +1,6 @@
+PASS: real/demo selection, valid zero, latest failure, freshness boundary/API failure, per-device chart and gaps
+PASS: 3s window labels/counts, partial failures, insufficient/NA, legacy separation, record-id dedup and failed-window gaps
+PASS: ten physical metrics, units, null/zero, independent ages, measurement identity, circular pointer/chart wrap
+PASS: rain mm/min own scale, zero/null/missing/failure and 9s freshness; legacy selection/reconnect logic preserved
+PASS: GPS named coordinates, six decimals, Beijing time, independent fix/receipt ages, stale cached values, latest errors and empty/device switch
+PASS: three-minute frame hold, frozen source quality, 540s business/GPS separation, partial/cache/zero/null, methods and historical labels

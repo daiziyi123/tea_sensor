@@ -1,0 +1,7 @@
+PASS: mode0_uart_test: all 8 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode1_adc_raw: all 14 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode2_unconfirmed_divider: all 16 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode2_confirmed_divider: all 23 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode2_measured_reference: all 23 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode2_voltage_endpoints: all 23 UART payloads byte-identical to pre-refactor snapshot
+PASS: mode2_manual_fake_gpio: all 23 UART payloads byte-identical to pre-refactor snapshot

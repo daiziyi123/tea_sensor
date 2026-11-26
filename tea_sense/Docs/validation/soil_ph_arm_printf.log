@@ -1,0 +1,14 @@
+Program Size: Code=29494 RO-data=1962 RW-data=252 ZI-data=6516  
+ARM CPU / fake HAL USART2: 土壤湿度：50.00%，风向角度：249.59度
+
+ADC_SAMPLE,round_id=11,sample_t_ms=1000,channel=AD2,pin=PA6,adc_channel=3,adc_raw=12345,status=OK,input_mv=1992,wind_speed_mps=11.71,range=OK
+
+ADC_SAMPLE,round_id=11,sample_t_ms=1000,channel=AD4,pin=PA4,adc_channel=18,adc_raw=34567,status=OK,input_mv=5511,soil_ph=9.00,range=HIGH
+ARM CPU / fake weather UART: WEATHER,seq=1,port=USART3,item=TEMP_HUM,tx_t_ms=10000,tx_end_ms=10000,rx_start_ms=10000,rx_end_ms=10000,TX=010300000002C40B,RX=01030401C8FFC9FB97,rx_count=9,rx_truncated=0,sample_t_ms=10000,temperature_c=-5.5,humidity_rh_pct=45.6,status=OK,exception_code=0x00,uart_error=0x00000000,cache=FRESH,backoff=0
+PASS: real ARM measured wind zero/mid/full, LOW/HIGH, zero-valid vs no-data, rational raw mean and UINT32_MAX count signed-64 calculations
+PASS: real ARM AD4 electrical endpoints/pH 3/6/7/9, signed voltage/LOW/HIGH, invalid/zero/fractional mean/UINT32_MAX; existing AD4 records extended only
+PASS: real ARM weather six CRC requests, shared HAL callbacks, negative temperature/uint32 light/scaled units and UART2 raw-frame output
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 100ms acquisition, 1s printf, 3s trimmed windows, fractional mean conversion, failure/NA and write recovery
+PASS: 91 complete rounds / 364 explicit 5/3/19/18 selections; AD2/AD4 raw samples/plain means/zero/failure; Chinese soil/wind direction and ACK preserved; no runtime malloc; CPU emulation only
+PASS: USART6 receive armed before TX; production receive callback/ring/main-loop JSON ACK alongside soil printf

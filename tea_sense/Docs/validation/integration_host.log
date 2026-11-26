@@ -1,0 +1,13 @@
+auto_direction: soil_host_test
+auto_direction: dtu_host_test
+gas_route_enabled: soil_host_test
+gas_route_enabled: dtu_host_test
+calibration_independent_of_vref: soil_host_test
+calibration_independent_of_vref: dtu_host_test
+short_hardware_timeouts: soil_host_test
+short_hardware_timeouts: dtu_host_test
+manual_fake_gpio: soil_host_test
+manual_fake_gpio: dtu_host_test
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
+PASS: missing private key explicitly disables JSON upload

@@ -1,0 +1,6 @@
+PASS: 1490 protected Core/Bsp/Sensors/Drivers/ioc/MDK files byte-identical by SHA256
+PASS: original app_config.h retained exactly, including APP_PERIOD_MS=1000U
+PASS: production App_Process changes limited to removing seq from the direct printf format and arguments
+PASS: no ADC, clock, prescaler, sampling-time, retarget or conversion changes; no calibration endpoints added
+SHA256 MDK-ARM/tea_sense/tea_sense.hex 51f9cb1cdbb9ac07f642f8494492da8d9495da3e119fbbf768f2ff18f2c71cde
+SHA256 MDK-ARM/tea_sense/tea_sense.axf f83dd5a579c81eebc40f10b290457265ac0f699959be26b8ef02579031344ddf

@@ -1,0 +1,6 @@
+Program Size: Code=21208 RO-data=1156 RW-data=184 ZI-data=4936  
+ARM CPU / fake HAL USART2: 土壤湿度：50.00%，风向角度：249.59度
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 100ms acquisition, 1s printf, 3s trimmed windows, fractional mean conversion, failure/NA and write recovery
+PASS: 91 complete rounds / 273 explicit 5/3/19 selections; Chinese UTF-8 two-value output only; hidden windows and ACK preserved; no runtime malloc; CPU emulation only
+PASS: USART6 receive armed before TX; production receive callback/ring/main-loop JSON ACK alongside soil printf

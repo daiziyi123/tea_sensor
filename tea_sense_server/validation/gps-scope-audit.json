@@ -1,0 +1,39 @@
+{
+  "firmware_files_byte_identical": 127,
+  "original_credentials_ports_database_path_preserved": true,
+  "private_binding_configured": true,
+  "public_secret_and_real_imei_scan": "passed",
+  "production_database_schema_unchanged": 2,
+  "production_migration_executed": false,
+  "user_services_stopped": false,
+  "dtu_parameters_changed": false,
+  "firmware_flashed": false,
+  "modified_or_added_files": [
+    "Docs/README.md",
+    "Docs/gps_integration.md",
+    "tea_sense_server/.env",
+    "tea_sense_server/.env.example",
+    "tea_sense_server/README.md",
+    "tea_sense_server/app/config.py",
+    "tea_sense_server/app/json_stream.py",
+    "tea_sense_server/app/location.py",
+    "tea_sense_server/app/main.py",
+    "tea_sense_server/app/storage.py",
+    "tea_sense_server/app/tcp_server.py",
+    "tea_sense_server/compose.yaml",
+    "tea_sense_server/tests/preview_gps.py",
+    "tea_sense_server/tests/test_gps.py",
+    "tea_sense_server/tests/test_gps_dashboard.js",
+    "tea_sense_server/tests/test_rain.py",
+    "tea_sense_server/tests/test_server.py",
+    "tea_sense_server/tests/test_v2.py",
+    "tea_sense_server/tools/backup_database.py",
+    "tea_sense_server/web/app.js",
+    "tea_sense_server/web/index.html",
+    "tea_sense_server/web/style.css"
+  ],
+  "private_files": [
+    "tea_sense_server/.env"
+  ],
+  "rollback_backup_directory": "integration_backups/gps_before_20261123_114236"
+}

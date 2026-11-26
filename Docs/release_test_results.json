@@ -1,0 +1,153 @@
+[
+  {
+    "test": "host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:48:41.046904+00:00",
+    "ended_utc": "2026-11-15T01:49:05.510536+00:00",
+    "log": "Docs/release_host.log"
+  },
+  {
+    "test": "architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:49:05.510536+00:00",
+    "ended_utc": "2026-11-15T01:49:05.608316+00:00",
+    "log": "Docs/release_architecture.log"
+  },
+  {
+    "test": "arm_build",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_build.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:49:05.608316+00:00",
+    "ended_utc": "2026-11-15T01:49:11.351145+00:00",
+    "log": "Docs/release_arm_build.log"
+  },
+  {
+    "test": "arm_cpu",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_arm_printf.py"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:49:11.351145+00:00",
+    "ended_utc": "2026-11-15T01:49:14.383236+00:00",
+    "log": "Docs/release_arm_cpu.log"
+  },
+  {
+    "test": "wire",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "Tests/check_server_upload.py",
+      "--server-root",
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:49:14.383236+00:00",
+    "ended_utc": "2026-11-15T01:49:16.529591+00:00",
+    "log": "Docs/release_wire.log"
+  },
+  {
+    "test": "server",
+    "command": [
+      "D:\\12-Project\\1-EC-Project\\tea_sense_server\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:45:30.450868+00:00",
+    "ended_utc": "2026-11-15T01:45:34.622540+00:00",
+    "log": "Docs/release_server.log"
+  },
+  {
+    "test": "node_syntax",
+    "command": [
+      "node",
+      "--check",
+      "web/app.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:45:34.622540+00:00",
+    "ended_utc": "2026-11-15T01:45:34.885273+00:00",
+    "log": "Docs/release_node_syntax.log"
+  },
+  {
+    "test": "node",
+    "command": [
+      "node",
+      "tests/test_dashboard.js"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project\\tea_sense_server",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:45:34.885273+00:00",
+    "ended_utc": "2026-11-15T01:45:34.953365+00:00",
+    "log": "Docs/release_node.log"
+  },
+  {
+    "test": "package_tests",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "Tools",
+      "-p",
+      "test_package_release.py",
+      "-v"
+    ],
+    "cwd": "D:\\12-Project\\1-EC-Project",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:45:34.953365+00:00",
+    "ended_utc": "2026-11-15T01:45:35.948222+00:00",
+    "log": "Docs/release_package_tests.log"
+  },
+  {
+    "test": "isolated_host",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/run_host_tests.py"
+    ],
+    "cwd": "isolated temporary unpack/tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:51:37.948441+00:00",
+    "ended_utc": "2026-11-15T01:52:03.432792+00:00",
+    "log": "Docs/release_isolated_host.log",
+    "configuration": "host-generated fixture credentials only",
+    "public_firmware_input_sha256": "917c8064da99a0aecc8aadd882de509972a6f9f2d314e024709f6a1ca4010458"
+  },
+  {
+    "test": "isolated_architecture",
+    "command": [
+      "C:\\Users\\15995\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "Tests/check_architecture.py"
+    ],
+    "cwd": "isolated temporary unpack/tea_sense",
+    "exit_code": 0,
+    "started_utc": "2026-11-15T01:52:03.432792+00:00",
+    "ended_utc": "2026-11-15T01:52:03.733166+00:00",
+    "log": "Docs/release_isolated_architecture.log",
+    "configuration": "host-generated fixture credentials only",
+    "public_firmware_input_sha256": "917c8064da99a0aecc8aadd882de509972a6f9f2d314e024709f6a1ca4010458"
+  }
+]

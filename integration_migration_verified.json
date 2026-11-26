@@ -1,0 +1,13 @@
+{
+  "original_uploads": 825,
+  "first_id": 1,
+  "last_id": 825,
+  "schema_version": 2,
+  "measurements": 825,
+  "integrity": "ok",
+  "protected_files_verified": 1485,
+  "original_server_unchanged": true,
+  "other_environment_values_unchanged": true,
+  "database_path": "D:\\12-Project\\1-EC-Project\\tea_sense_server\\data\\tea_sense.db",
+  "historical_columns_and_payload_identical": true
+}

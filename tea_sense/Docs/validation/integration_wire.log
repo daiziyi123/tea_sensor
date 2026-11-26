@@ -1,0 +1,4 @@
+PASS: 24 C frames from 720 synthetic 100ms samples per channel / 72 virtual seconds; physical conversions, fragmented TCP, committed SQLite, API/CSV and real C ACK
+PASS: 24 uploads / 128 independent points; same-valued new weather queries add points, cached snapshots do not
+PASS: quality-failed C windows stay null; weather failure completion ticks preserved; valid siblings retained
+PASS: fixture credentials/demo device/temp DBs only; full frames 1111..1129 bytes, TCP max 8192

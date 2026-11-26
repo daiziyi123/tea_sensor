@@ -1,0 +1,4 @@
+Program Size: Code=17884 RO-data=1032 RW-data=40 ZI-data=2280  
+PASS: SOIL_APP_MODE=1, compiled, linked, HEX: D:\12-Project\1-EC-Project\tea_sense\MDK-ARM\tea_sense\soil_adc_raw.hex
+Program Size: Code=17964 RO-data=1032 RW-data=40 ZI-data=2280  
+PASS: SOIL_APP_MODE=2, compiled, linked, HEX: D:\12-Project\1-EC-Project\tea_sense\MDK-ARM\tea_sense\soil_adc_voltage.hex

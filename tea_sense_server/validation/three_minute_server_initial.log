@@ -1,0 +1,35 @@
+D:\12-Project\1-EC-Project\tea_sense_server\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+.........F..GPS rejected device=unassociated reason=before_auth
+.GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+GPS rejected device=demo_gps_001 reason=invalid
+.GPS rejected device=unassociated reason=before_auth
+..GPS rejected device=demo_gps_001 reason=unknown_imei
+GPS rejected device=demo_gps_001 reason=binding_mismatch
+GPS rejected device=unassociated reason=before_auth
+.GPS rejected device=demo_gps_001 reason=invalid
+.................................
+======================================================================
+FAIL: test_duplicate_late_conflict_errors_and_independent_ages (test_gps.GpsStorageTests.test_duplicate_late_conflict_errors_and_independent_ages)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\12-Project\1-EC-Project\tea_sense_server\tests\test_gps.py", line 136, in test_duplicate_late_conflict_errors_and_independent_ages
+    self.assertEqual((current["fix_age_seconds"], current["received_age_seconds"], current["last_received_age_seconds"]), (242, 240, 0))
+AssertionError: Tuples differ: (602.0, 600.0, 0) != (242, 240, 0)
+
+First differing element 0:
+602.0
+242
+
+- (602.0, 600.0, 0)
++ (242, 240, 0)
+
+----------------------------------------------------------------------
+Ran 50 tests in 3.792s
+
+FAILED (failures=1)

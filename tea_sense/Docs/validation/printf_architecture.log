@@ -1,0 +1,4 @@
+PASS: flat Inc/Src layers, include boundaries, no HAL above Bsp, no cycles or writable externs
+PASS: MDK include/source/IDE paths, layer groups, no duplicates or replaced symbols in active code
+PASS: single runtime flow; removed application selector and business logging module have no active references
+PASS: CubeMX generation flags, firmware package and rain falling-edge setting

@@ -1,0 +1,5 @@
+PASS: 1491 protected files unchanged (Core/Bsp/Sensors/Drivers/ioc/MDK/1000 ms configuration)
+PASS: only production change is printf literal %% after the two-decimal fixed-point percentage
+PASS: same current sample/result, endpoints 436/31146, range flags, ADC failures and USART2 retarget preserved
+SHA256 MDK-ARM/tea_sense/tea_sense.hex 13274f8d8a98bce3cc499cbe977d183b36a6f584a65d92c6795522229fe7a29c
+SHA256 MDK-ARM/tea_sense/tea_sense.axf 222a9cd5f5c5eea4935caa72bb32d3374d76965ef78d6b9ca46ce42403dd1830

@@ -1,0 +1,3 @@
+PASS: 1492 protected file hashes unchanged (hardware source, .ioc, server .env and existing database).
+PASS: existing server app/*.py implementation unchanged.
+No Git initialization/commit or firmware flash performed.

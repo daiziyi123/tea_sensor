@@ -1,0 +1,8 @@
+PASS: 1483 protected Core/Drivers/Sensors/ioc/existing Bsp implementation hashes unchanged
+PASS: latest CubeMX USART6 IRQ/pins/baud and APB clocks preserved; no regeneration claimed/performed
+PASS: original soil scheduling/acquisition/conversion/printf block byte-equivalent as text, endpoints 436/31146 unchanged
+PASS: USART2 printf and its existing direction implementation unchanged; DTU has no direction GPIO operations
+PASS: MDK compiler/library/linker options unchanged; sole new build source is Bsp/Src/bsp_dtu.c
+PASS: IDE debugger settings retained, file numbers contiguous; previous history retained
+SHA256 MDK-ARM/tea_sense/tea_sense.hex da3db77c532549e030015af17a87f1f344d19b9ce695c4bdb2d1cfe27deeecdc
+SHA256 MDK-ARM/tea_sense/tea_sense.axf 1e45ef01d79e06170652f2ca5412d4a3a7a037771dcd97464ff43d9739d35798

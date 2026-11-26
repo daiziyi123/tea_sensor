@@ -1,0 +1,22 @@
+"use strict";
+const assert=require("node:assert/strict");
+const {metricFreshness,displayReading,windowInfo,freshness,locationView,DEFAULT_METRICS,chartSegments}=require("../web/app.js");
+const current={value:19.4,status:"OK",age_ms:1000,quality_frozen:true,statistics:{method:"latest"}};
+assert.equal(metricFreshness(current,DEFAULT_METRICS.temperature_c,179000).valid,true);
+assert.equal(metricFreshness({...current,quality_frozen:false},DEFAULT_METRICS.temperature_c,179000).valid,false);
+assert.equal(metricFreshness({...current,status:"STALE",value:null},DEFAULT_METRICS.temperature_c).valid,false);
+for(const status of ["OK","PARTIAL","CACHED"])assert.equal(displayReading({...current,value:0,status},"wind_speed_mps").text,"0.00");
+for(const status of ["CALM","VARIABLE","WINDOW_INSUFFICIENT"])assert.equal(displayReading({...current,value:null,status},"wind_direction_deg").text,"—");
+assert.ok(windowInfo({...current,value:null,status:"CALM"},"wind_direction_deg").quality.includes("静风"));
+assert.ok(windowInfo({...current,value:null,status:"VARIABLE"},"wind_direction_deg").quality.includes("方向不稳定"));
+assert.ok(windowInfo({...current,status:"CACHED",cached:true,latest_query_status:"CRC_ERROR"}).quality.includes("CRC_ERROR"));
+assert.ok(windowInfo({...current,statistics:{method:"median"}}).quality.includes("短窗"));
+assert.equal(windowInfo({value:20,status:"OK"}).quality,"测量有效"); // historical semantics
+const received=new Date(0).toISOString();
+assert.equal(freshness({received_at:received},540000,540).fresh,true);
+assert.equal(freshness({received_at:received},540001,540).fresh,false);
+const gps={longitude:114,latitude:30,fix_time_utc:received,received_at_utc:received};
+assert.equal(locationView(gps,540001).status,"最近一次定位");
+const rows=[0,180000,360000].map((t,i)=>({id:i+1,device_id:"d",received_at:new Date(t).toISOString(),...current}));
+assert.equal(chartSegments(rows,"d",30000,"temperature_c").length,1);
+console.log("PASS: three-minute frame hold, frozen source quality, 540s business/GPS separation, partial/cache/zero/null, methods and historical labels");

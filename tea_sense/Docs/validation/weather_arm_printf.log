@@ -1,0 +1,8 @@
+Program Size: Code=26724 RO-data=1520 RW-data=208 ZI-data=6296  
+ARM CPU / fake HAL USART2: 土壤湿度：50.00%，风向角度：249.59度
+ARM CPU / fake weather UART: WEATHER,seq=1,port=USART3,item=TEMP_HUM,tx_t_ms=10000,tx_end_ms=10000,rx_start_ms=10000,rx_end_ms=10000,TX=010300000002C40B,RX=01030401C8FFC9FB97,rx_count=9,rx_truncated=0,sample_t_ms=10000,temperature_c=-5.5,humidity_rh_pct=45.6,status=OK,exception_code=0x00,uart_error=0x00000000,cache=FRESH,backoff=0
+PASS: real ARM weather six CRC requests, shared HAL callbacks, negative temperature/uint32 light/scaled units and UART2 raw-frame output
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 100ms acquisition, 1s printf, 3s trimmed windows, fractional mean conversion, failure/NA and write recovery
+PASS: 91 complete rounds / 273 explicit 5/3/19 selections; Chinese UTF-8 two-value output only; hidden windows and ACK preserved; no runtime malloc; CPU emulation only
+PASS: USART6 receive armed before TX; production receive callback/ring/main-loop JSON ACK alongside soil printf

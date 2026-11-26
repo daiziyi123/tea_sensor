@@ -1,0 +1,5 @@
+Program Size: Code=18748 RO-data=1580 RW-data=116 ZI-data=4364  
+PASS: real Arm libc printf -> production _sys_write -> BspConsole -> fake HAL
+PASS: 100ms acquisition, 1s printf, 3s trimmed windows, fractional mean conversion, failure/NA and write recovery
+PASS: one ADC read per period, no runtime malloc; CPU emulation only, no board validation
+PASS: USART6 receive armed before TX; production receive callback/ring/main-loop JSON ACK alongside soil printf

@@ -1,0 +1,9 @@
+PASS: all Core files (including main.c), ioc, pin/clock/UART/ADC/rain settings byte-identical to pre-change snapshot
+PASS: all 1446 Drivers HAL/CMSIS file SHA256 values unchanged
+PASS: ADC calibration/acquisition/cleanup, hardware config validation, time base and AUTO/MANUAL direction implementations unchanged
+PASS: existing pure conversion definitions and UART finite timeout/TC/error implementation preserved exactly
+PASS: MDK compiler/C library/linker/debugger options preserved; only deleted source reference and IDE file indices changed
+PASS: existing historical documentation unchanged; previous operational docs/logs archived before refresh
+PASS: replaced business output module and obsolete multi-selector build script deleted
+SHA256 MDK-ARM/tea_sense/tea_sense.hex d5a5b7c5a0db2c1fb15d5d3bfebe87e30a780bd7789cf9b6345c03ece4b346af
+SHA256 MDK-ARM/tea_sense/tea_sense.axf 86e13737befc5d08ff4dbbb5a0428793d253edadb2b80f4b0d7ba92e51f84be2

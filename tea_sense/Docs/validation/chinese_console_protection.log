@@ -1,0 +1,18 @@
+Protected files checked: 1516; changed: 0
+PASS: all Sensors/Bsp/Core/Drivers, ADC/CubeMX config, MDK options, upload protocol and private keys unchanged
+PASS: server source/frontend/config unchanged; no production database opened
+PASS: acquisition round, raw AD3 accumulator and all window closing/statistics code unchanged
+PASS: USART2 application output has only the four direct branches for two Chinese values
+PASS: communication errors and ACK state retained in read-only App/Bsp diagnostics
+Changed source/tests/docs (logs/build artifacts excluded):
+App\Inc\app_main.h
+App\Src\app_main.c
+Tests\ad3_cases.h
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+Tests\dtu_window_cases.h
+Tests\soil_host_test.c
+Tests\wind_direction_cases.h
+Tests\wind_speed_cases.h
+Docs\code_architecture.md
+Docs\wind_direction_validation.md

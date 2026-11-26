@@ -1,0 +1,57 @@
+[
+  {
+    "chartBottom": 1027.328125,
+    "clientWidth": 1905,
+    "counts": "有效 30/30 · 参与均值 28",
+    "primary": "90.24px",
+    "scrollWidth": 1905,
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "chartBottom": 1367.734375,
+    "clientWidth": 2545,
+    "counts": "有效 30/30 · 参与均值 28",
+    "primary": "120.32px",
+    "scrollWidth": 2545,
+    "viewport": [
+      2560,
+      1440
+    ]
+  },
+  {
+    "chartBottom": 1919.625,
+    "clientWidth": 3825,
+    "counts": "有效 30/30 · 参与均值 28",
+    "primary": "180px",
+    "scrollWidth": 3825,
+    "viewport": [
+      3840,
+      2160
+    ]
+  },
+  {
+    "chartBottom": 862.53125,
+    "clientWidth": 1351,
+    "counts": "有效 30/30 · 参与均值 28",
+    "primary": "72px",
+    "scrollWidth": 1351,
+    "viewport": [
+      1366,
+      768
+    ]
+  },
+  {
+    "chartBottom": 1656.40625,
+    "clientWidth": 375,
+    "counts": "有效 30/30 · 参与均值 28",
+    "primary": "62.4px",
+    "scrollWidth": 375,
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

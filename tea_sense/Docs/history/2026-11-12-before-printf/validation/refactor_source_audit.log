@@ -1,0 +1,10 @@
+PASS: every Core file byte-identical to baseline except the three authorized main.c USER CODE replacements
+PASS: ioc byte comparison: only DeletePrevious true -> false; hardware, clock, firmware and preservation flags retained
+PASS: MDK target options byte-equivalent as XML except added include paths; startup/source set changes restricted to migrated modules
+PASS: MDK IDE target/debug options retained; only file/group records updated
+PASS: historical documentation retained without changes
+PASS: no Drivers file modification timestamp newer than the baseline snapshot
+PASS: obsolete module objects/dependencies removed from active output; fresh link response has no replaced objects
+PASS: freshly linked AXF symbols use new APIs; old module function prefixes absent
+SHA256 MDK-ARM/tea_sense/tea_sense.hex 6343e7f2ec7cb536bae8d29a48cd0232c2b29bc9f9cca54a4791e8f625d30553
+SHA256 MDK-ARM/tea_sense/tea_sense.axf e5da79df266c12dd85680738c4e91f22fb93d8286e26c2be962582a74cbf3a9f

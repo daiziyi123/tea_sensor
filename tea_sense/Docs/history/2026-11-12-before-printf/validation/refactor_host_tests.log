@@ -1,0 +1,15 @@
+mode0_uart_test
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode1_adc_raw
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode2_unconfirmed_divider
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode2_confirmed_divider
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode2_measured_reference
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode2_voltage_endpoints
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+mode2_manual_fake_gpio
+PASS: modes, unsigned ADC, 0/2500/5000mV ratio+percent, divider guard, errors, formatting and RS485
+PASS: unconfirmed manual mode is blocked at compile time

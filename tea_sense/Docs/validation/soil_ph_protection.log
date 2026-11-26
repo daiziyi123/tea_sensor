@@ -1,0 +1,31 @@
+PASS: SHA-256 audit against the full pre-edit project manifest.
+Snapshot: C:\Users\15995\AppData\Local\Temp\tea_sense_ph_before_6jr_7i8v
+Original files hashed: 1781; intentional original edits: 8; refreshed MDK build products: 51; new MDK generated files: 2.
+PASS: Bsp/Core/Drivers/.ioc/app_config.h/bsp_config.h unchanged, including VREF state, ADC period/channel sequence/clock/sample-time/calibration.
+PASS: All pre-existing Sensors production sources including soil/wind-speed/wind-direction/weather unchanged.
+PASS: App weather/upload/JSON/coreJSON, private upload key, DTU/console transports and startup/link settings unchanged.
+PASS: All pre-existing validation records unchanged; no original file deleted.
+PASS: MDK XML structural comparison changed solely sensor_ph.c insertion and required IDE FileNumber shifts; all other settings preserved.
+PASS: UART byte comparison with previous ARM fixture: AD4 only appends input_mv/soil_ph/range; AD2/soil/direction/weather records identical.
+PASS: 43 records use CRLF; no bare LF or CRCRLF.
+Changed original files:
+App\Inc\app_main.h
+App\Src\app_main.c
+Docs\code_architecture.md
+MDK-ARM\tea_sense.uvoptx
+MDK-ARM\tea_sense.uvprojx
+Tests\adc_raw_cases.h
+Tests\check_arm_printf.py
+Tests\dtu_host_test.c
+New source/test/document/evidence files:
+Docs\soil_ph_validation.md
+Docs\validation\soil_ph_architecture.log
+Docs\validation\soil_ph_arm_build.log
+Docs\validation\soil_ph_arm_console.txt
+Docs\validation\soil_ph_arm_printf.log
+Docs\validation\soil_ph_host_tests.log
+Sensors\Inc\sensor_ph.h
+Sensors\Src\sensor_ph.c
+Tests\ph_cases.h
+Added evidence: Docs\validation\soil_ph_protection.log
+No device programming or flashing performed.

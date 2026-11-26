@@ -1,0 +1,3 @@
+PASS: 1491 protected files unchanged: Core/Drivers/Bsp, .ioc, private app_secrets.h, server .env and existing database.
+PASS: actual credential not present in source/tests/web/docs/validation text (local private header excluded).
+No Git initialization/commit or firmware flash.

@@ -1,0 +1,10 @@
+auto_direction
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+calibration_independent_of_vref
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+short_hardware_timeouts
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+manual_fake_gpio
+PASS: two-point wetness endpoints/rounding/range/65536 inputs, ADC errors, tick wrap, printf, timeouts and direction
+PASS: unconfirmed manual mode is blocked at compile time
+PASS: zero calibration span is rejected at compile time
